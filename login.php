@@ -22,4 +22,4 @@ if ($result) {
     }
 }else{
     header('Location: ../login.php?e=1');
-}>
+}
