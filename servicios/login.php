@@ -15,11 +15,11 @@ if ($result) {
             $_SESSION['codeUsuario']=$row['codeUsuario'];
             $_SESSION['emailUsuario']=$row['emailUsuario'];
             $_SESSION['nombreUsuario']=$row['nombreUsuario'];
-            header('Location: ../login.php?e=2');
+            header('Location: ../');
         }
     }else{
         header('Location: ../login.php?e=2');
     }
 }else{
     header('Location: ../login.php?e=1');
-}>
+}
