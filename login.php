@@ -29,7 +29,7 @@
         <input type="text" name="emailUsuario">
         <label for="password" class="label" >Contraseña</label>
         <input type="password" name="contrasena">
-        <script language="php">
+        <?php
           if (isset($_GET['e'])) { 
             switch ($_GET['e']) {
               case '1':
@@ -45,7 +45,7 @@
                 break;
             }
           }
-        </script>
+        ?>
         <button type="submit">Ingresar</button>
       </form>
     </div>
