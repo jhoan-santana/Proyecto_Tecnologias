@@ -18,9 +18,26 @@
   <div class="form-group"> 
     <form action="login.php" method="POST">
       <label for="email">Correo Electronico</label>
-      <input type="text" name="emailUsuario" class="form-control" autocomplete="false">
+      <input type="text" name="emailUsuario">
       <label for="password">Contraseña</label>
-      <input type="password" name="contrasena" class="form-control" autocomplete="false">
+      <input type="password" name="contrasena">
+      <?php
+        if (isset($_GET['e'])) {
+          switch ($_GET['e']) {
+            case '1':
+              echo '<p>Error de conexion</p>'
+              break;
+            case '2':
+              echo '<p>Email invalido</p>'
+              break;
+            case '3':
+              echo '<p>contraseña incorrecta</p>'
+              break;
+            default:
+              break;
+          }
+        }
+      ?>
       <button type="submit">Ingresar</button>
     </form>
   </div>
