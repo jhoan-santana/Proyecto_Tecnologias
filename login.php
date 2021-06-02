@@ -16,7 +16,7 @@
 <body>
 
   <div class="form-group"> 
-    <form action="login.php" method="POST">
+    <form action="servicios/login.php" method="POST">
       <label for="email">Correo Electronico</label>
       <input type="text" name="emailUsuario">
       <label for="password">Contraseña</label>
@@ -25,13 +25,13 @@
         if (isset($_GET['e'])) {
           switch ($_GET['e']) {
             case '1':
-              echo '<p>Error de conexion</p>'
+              echo '<p>Error de conexion</p>';
               break;
             case '2':
-              echo '<p>Email invalido</p>'
+              echo '<p>Email invalido</p>';
               break;
             case '3':
-              echo '<p>contraseña incorrecta</p>'
+              echo '<p>contraseña incorrecta</p>';
               break;
             default:
               break;
