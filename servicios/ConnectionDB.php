@@ -1,5 +1,5 @@
  <?php
-class ConnectionDB {
+/*class ConnectionDB {
 
    private $dbhost = 'localhost:3306';
    private $dbname = 'proyecto';
@@ -28,3 +28,5 @@ class ConnectionDB {
 }
   
 ?>
+*/
+$con=mysqli_connect('localhost','root','','proyecto');

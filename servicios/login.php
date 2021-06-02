@@ -2,9 +2,9 @@
 include('ConnectionDB.php');
 $emailUsuario=$_POST['emailUsuario'];
 $sql="SELECT * FROM usuario WHERE emailUsuario='$emailUsuario'";
-$result=mysql_query($con,$sql);
+$result=mysqli_query($con,$sql);
 if ($result) {
-    $row=mysql_fetch_array($result);
+    $row=mysqli_fetch_array($result);
     $count=mysqli_num_rows($result);
     if ($count!=0) {
         $contrasena=$_POST['contrasena'];
@@ -22,4 +22,4 @@ if ($result) {
     }
 }else{
     header('Location: ../login.php?e=1');
-}?>
+}
