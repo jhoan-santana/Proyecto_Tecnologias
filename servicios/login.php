@@ -2,7 +2,7 @@
 include('ConnectionDB.php');
 $emailUsuario=$_POST['emailUsuario'];
 $sql="SELECT * FROM usuario WHERE emailUsuario='$emailUsuario'";
-$result=mysqli_query($con,$sql);
+$result=mysql_query($con,$sql);
 if ($result) {
     $row=mysql_fetch_array($result);
     $count=mysqli_num_rows($result);

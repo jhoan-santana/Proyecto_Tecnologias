@@ -2,7 +2,7 @@
 class ConnectionDB {
 
    private $dbhost = 'localhost:3306';
-   private $dbname = 'proyecto';  
+   private $dbname = 'proyecto';
    private $dbuser = 'root';                  
    private $dbpass = '';
    

@@ -13,4 +13,3 @@ INSERT INTO usuario(nombreUsuario,apellidoUsuario,emailUsuario,contrasena,estado
 VALUES ('nico','chaves','nicolaschaves97@gmail.com','1234',1);
 
 SELECT*FROM proyecto.usuario;
-
