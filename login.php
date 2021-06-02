@@ -21,8 +21,9 @@
       <input type="text" name="emailUsuario">
       <label for="password">Contraseña</label>
       <input type="password" name="contrasena">
-      <?php
-        if (isset($_GET['e'])) {
+     
+     <script language="php">
+        if (isset($_GET['e'])) { 
           switch ($_GET['e']) {
             case '1':
               echo '<p>Error de conexion</p>';
@@ -37,9 +38,11 @@
               break;
           }
         }
-      ?>
+        </script>
+
+        
       <button type="submit">Ingresar</button>
     </form>
   </div>
-</body>p
+</body>
 </html>
