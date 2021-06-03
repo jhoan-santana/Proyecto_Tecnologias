@@ -1,4 +1,4 @@
-REATE TABLE administrador(
+CREATE TABLE administrador(
 codeAdmin INT NOT NULL AUTO_INCREMENT,
 emailAdmin VARCHAR(50)NOT NULL,
 contrasenaAdmin VARCHAR(20)NOT NULL,
