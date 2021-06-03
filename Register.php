@@ -17,7 +17,7 @@
 <header>
 
   <nav>                
-      <img src="assets/logo.png" alt="" class= "imagen-logo">
+      <img src="assets/logo.png" alt="" class= "formulario-logo">
     </nav>  
    
 
@@ -27,7 +27,7 @@
 
       <input type="text" name="NombreUsuario" placeholder="Nombre de Usuario">
 
-      <input type="text" name="ApellidoUsuario" placeholder="Apellido de Usuari">
+      <input type="text" name="ApellidoUsuario" placeholder="Apellido de Usuario">
 
       <input type="text" name="EmailUsuario" placeholder="Correo electronico">
 
