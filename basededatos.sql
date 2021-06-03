@@ -21,16 +21,109 @@ CREATE TABLE PRODUCTO(
 	PRIMARY KEY (codpro)
 );
 
-alter table PRODUCTO add rutimapro varchar(100) null;
+CREATE TABLE GABINETE(
+	codpro int not null AUTO_INCREMENT,
+	nompro varchar(50) null,
+	despro varchar(100) null,
+	prepro numeric(6,2) null,
+	estado int null,
+    rutimapro varchar(100) null,
+	CONSTRAINT pk_producto
+	PRIMARY KEY (codpro)
 
-INSERT INTO PRODUCTO (nompro,despro,prepro,estado,rutimapro)
+);
+
+CREATE TABLE PROCESADOR(
+	codpro int not null AUTO_INCREMENT,
+	nompro varchar(50) null,
+	despro varchar(100) null,
+	prepro numeric(6,2) null,
+	estado int null,
+    rutimapro varchar(100) null,
+	CONSTRAINT pk_producto
+	PRIMARY KEY (codpro)
+);
+
+CREATE TABLE MOTHERBOARD(
+	codpro int not null AUTO_INCREMENT,
+	nompro varchar(50) null,
+	despro varchar(100) null,
+	prepro numeric(6,2) null,
+	estado int null,
+    rutimapro varchar(100) null,
+	CONSTRAINT pk_producto
+	PRIMARY KEY (codpro)
+);
+
+
+CREATE TABLE RAM(
+	codpro int not null AUTO_INCREMENT,
+	nompro varchar(50) null,
+	despro varchar(100) null,
+	prepro numeric(6,2) null,
+	estado int null,
+    rutimapro varchar(100) null,
+	CONSTRAINT pk_producto
+	PRIMARY KEY (codpro)
+);
+
+CREATE TABLE SSD(
+	codpro int not null AUTO_INCREMENT,
+	nompro varchar(50) null,
+	despro varchar(100) null,
+	prepro numeric(6,2) null,
+	estado int null,
+    rutimapro varchar(100) null,
+	CONSTRAINT pk_producto
+	PRIMARY KEY (codpro)
+);
+CREATE TABLE HDD(
+	codpro int not null AUTO_INCREMENT,
+	nompro varchar(50) null,
+	despro varchar(100) null,
+	prepro numeric(6,2) null,
+	estado int null,
+    rutimapro varchar(100) null,
+	CONSTRAINT pk_producto
+	PRIMARY KEY (codpro)
+);
+CREATE TABLE GPU(
+	codpro int not null AUTO_INCREMENT,
+	nompro varchar(50) null,
+	despro varchar(100) null,
+	prepro numeric(6,2) null,
+	estado int null,
+    rutimapro varchar(100) null,
+	CONSTRAINT pk_producto
+	PRIMARY KEY (codpro)
+);
+CREATE TABLE PSU(
+	codpro int not null AUTO_INCREMENT,
+	nompro varchar(50) null,
+	despro varchar(100) null,
+	prepro numeric(6,2) null,
+	estado int null,
+    rutimapro varchar(100) null,
+	CONSTRAINT pk_producto
+	PRIMARY KEY (codpro)
+);
+
+CREATE TABLE COOLING(
+	codpro int not null AUTO_INCREMENT,
+	nompro varchar(50) null,
+	despro varchar(100) null,
+	prepro numeric(6,2) null,
+	estado int null,
+	rutimapro varchar(100) null,
+	CONSTRAINT pk_producto
+	PRIMARY KEY (codpro)
+);
+
+ 
+
+INSERT INTO GABINETE (nompro,despro,prepro,estado,rutimapro)
 VALUES ('gabinete azul con ventilacion','Un gabinete con dimensiones de 50 cm de alto x 60 cm de largo x 25 cm de ancho','160 000',1,'gabineteazul.PNG')
-,('Papel Bond A4','Papel ultra blanco de 180gr','9.99',1,'bonda4.jpg')
-,('Colores Faber Castell','Caja de colores x 12 unid. + 2 de regalo','5.99',1,'colores12unid.jpg')
-,('Ecolapices Faber Castell','Caja de ecolapices x 60 unid.','11.99',1,'ecolapices60unid.jpg')
-,('Estuche lapices Faber Castell','Estuche de lapiceros de colores x 5 unid.','6.99',1,'lapiceros5unid.jpg')
-,('Tempera Artesco 250 ml','Frasco de tempera Artesco de 250 ml','3.99',1,'temperaartesco.jpg')
-,('Plastilina Norma','Caja con 12 barras plastilinas. 260 gr','5.99',1,'plastilinanorma.jpg');
+;
 
 SELECT*FROM proyecto.PRODUCTO;
 
