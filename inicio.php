@@ -45,9 +45,6 @@
 		<div class="products-list" id="space-list">
 		</div>
 	</div>
-
-
-
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
@@ -78,5 +75,49 @@
 			});
 		});
 	</script>
+
+	<div class="contenedor grafica">
+		<h1 class = "titulo">Tarjeta gráfica</h1>
+		<div class= contenedor-grafica>
+			<div class= "contenido-textos">
+				<h3><span>1</span>¿Qué son las tarjetas gráficas?</h3>
+				<p>La tarjeta gráfica o tarjeta de vídeo de un componente que viene integrado en la placa base del PC o se instala a parte para ampliar sus capacidades. Concretamente, esta tarjeta está dedicada al procesamiento de datos relacionados con el vídeo y las imágenes que se están reproduciendo en el ordenador. </p>
+			</div>
+			</div>
+		<div class="products-list" id="space-list1">
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$.ajax({
+				url:'servicios/producto/get_all_products1.php',
+				type:'POST',
+				data:{},
+				success:function(data){
+					console.log(data);
+					let html='';
+					for (var i = 0; i < data.datos.length; i++) {
+						html+=
+						'<div class="product-box">'+
+							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
+								'<div class="product">'+
+									'<img src="assets/products/Chasis/'+data.datos[i].rutimapro+'">'+
+									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
+									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
+									'<div class="detail-price">'+data.datos[i].prepro+'</div>'+
+								'</div>'+
+							'</a>'+
+						'</div>';
+					}
+					document.getElementById("space-list1").innerHTML=html;
+				},
+				error:function(err){
+					console.error(err);
+				}
+			});
+		});
+	</script>
+
+
 </body>
 </html>
