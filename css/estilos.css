@@ -36,7 +36,7 @@ header{
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    margin-bottom:20px;   
+    margin-bottom:0px;   
 }
 
 .imagen-logo{
@@ -85,7 +85,6 @@ header .textos-header{
 
 .textos-header h1{
     font-size: 150%;
-
     color:aliceblue;
 }
 
@@ -125,6 +124,7 @@ header .textos-header{
     font-weight: 300;
     text-align: justify;
 }
+
 
 
 
@@ -188,8 +188,7 @@ button{
     width: 250px;
     cursor: pointer;
     font-size: 18px;
-    transition-duration: 0.25s;
-    
+    transition-duration: 0.25s;  
 }
 
 button:hover{
@@ -221,8 +220,6 @@ form p{
     font-size: 100%;
     font-weight: 300;
     color:aliceblue;
-
-
 }
 
 .menu{
@@ -238,19 +235,34 @@ form p{
 
 /*index.css*/
 
-/*.main-content{}
-.content-page{}
-.title-section{}*/
 
 .products-list{
     display: table;
 	width: 100%;
 }
+
+
 .product-box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 0px;
+    width: 30%;
+    display: block;
+    text-align: center;
+    background-color: #f1f1f1;
     display: inline-table;
 	padding: 10px;
 	width: calc(100%/5 - 20px);
 }
+
+@media screen and (max-width: 900px) {
+    .product-box {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+
 .product-box a{
 	text-decoration: none;
 }
@@ -287,4 +299,9 @@ form p{
 	color: var(--main-red);
 	padding: 5px;
 	width: calc(100% - 10px);
+}
+
+.products-list{
+	display: table;
+	width: 100%;
 }
