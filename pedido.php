@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mi sistema E-Commerce</title>
+	<title>PCREA</title>
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">

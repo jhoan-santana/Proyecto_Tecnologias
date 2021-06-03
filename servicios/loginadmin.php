@@ -14,7 +14,7 @@ if ($result) {
             session_start();
             $_SESSION['codeAdmin']=$row['codeAdmin'];
             $_SESSION['emailAdmin']=$row['emailAdmin'];
-            header('Location: ../');
+            header('Location: ../dashboard_admi.html');
         }
     }else{
         header('Location: ../login.php?e=2');
