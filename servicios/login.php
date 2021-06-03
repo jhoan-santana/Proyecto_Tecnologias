@@ -2,7 +2,7 @@
 //1: Error de conexion
 //2: Email invalido
 //3: Contraseña incorrecta
-include('_conexion.php');
+include('ConnectionDB.php');
 $emausu=$_POST['emausu'];
 $sql="SELECT * FROM USUARIO WHERE emausu='$emausu'";
 $result=mysqli_query($con,$sql);

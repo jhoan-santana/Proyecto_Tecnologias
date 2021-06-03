@@ -1,5 +1,5 @@
 <?php
-include('../_conexion.php');
+include('../ConnectionDB.php');
 $response=new stdClass();
 
 function estado2texto($id){

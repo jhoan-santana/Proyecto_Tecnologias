@@ -7,7 +7,7 @@ if (!isset($_SESSION['codusu'])) {
 	$response->detail="No esta logeado";
 	$response->open_login=true;
 }else{
-	include_once('../_conexion.php');
+	include_once('../ConnectionDB.php');
 	$codusu=$_SESSION['codusu'];
 	$codpro=$_POST['codpro'];
 	$sql="INSERT INTO pedido

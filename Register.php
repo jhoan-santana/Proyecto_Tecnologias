@@ -11,10 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
 <header>
+
 
   <nav>                
       <img src="assets/logo.png" alt="" class= "formulario-logo">
@@ -23,35 +25,19 @@
 
     <div class="form-group"> 
     <h1>Registrate</h1>
-      <form action="servicios/login.php" method="POST">
+      <form action="servicios/register.php" method="POST">
 
-      <input type="text" name="NombreUsuario" placeholder="Nombre de Usuario">
+      <input type="text" name="nomusu" placeholder="Nombre de Usuario">
 
-      <input type="text" name="ApellidoUsuario" placeholder="Apellido de Usuario">
+      <input type="text" name="apeusu" placeholder="Apellido de Usuario">
 
-      <input type="text" name="EmailUsuario" placeholder="Correo electronico">
+      <input type="email" name="emausu" placeholder="Correo electronico">
 
-      <input type="text" name="Contrasena" placeholder="Contraseña">
-
-        <?php
-          if (isset($_GET['e'])) { 
-            switch ($_GET['e']) {
-              case '1':
-                echo '<p>Error de conexion</p>';
-                break;
-              case '2':
-                echo '<p>Email invalido</p>';
-                break;
-              case '3':
-                echo '<p>contraseña incorrecta</p>';
-                break;
-              default:
-                break;
-            }
-          }
-        ?>
-        <button type="submit">Ingresar</button>
+      <input type="text" name="pasusu" placeholder="Contraseña">
+      <input type="submit" name="Registrar">
         <h1></h1>
+     
+
         <a class = "botonregistro" href="inicio.html">Salir</a>
       </form>
     </div>

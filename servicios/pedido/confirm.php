@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	$response=new stdClass();
-	include_once('../_conexion.php');
+	include_once('../ConnectionDB.php');
 
 	$codusu=$_SESSION['codusu'];
 	$dirusu=$_POST['dirusu'];
