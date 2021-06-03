@@ -10,6 +10,21 @@ PRIMARY KEY (codeUsuario)
 );
 
 
+CREATE TABLE administrador(
+codeAdmin INT NOT NULL AUTO_INCREMENT,
+emailAdmin VARCHAR(50)NOT NULL,
+contrasenaAdmin VARCHAR(20)NOT NULL,
+CONSTRAINT fk_Administrador
+PRIMARY KEY (codeAdmin)
+);
+
+INSERT INTO administrador(emailAdmin,contrasenaAdmin)
+VALUES ('1234@gmail.com','12345');
+
+SELECT*FROM proyecto.administrador;
+
+
+
 INSERT INTO usuario(nombreUsuario,apellidoUsuario,emailUsuario,contrasena,estado)
 VALUES ('nico','chaves','nicolaschaves97@gmail.com','1234',1);
 
