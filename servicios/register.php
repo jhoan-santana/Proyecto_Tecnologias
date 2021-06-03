@@ -1,25 +1,20 @@
+
 <?php
 include('ConnectionDB.php');
-$emailUsuario=$_POST['emailUsuario'];
-$sql="SELECT * FROM usuario WHERE emailUsuario='$emailUsuario'";
-$result=mysqli_query($con,$sql);
-if ($result) {
-    $row=mysqli_fetch_array($result);
-    $count=mysqli_num_rows($result);
-    if ($count!=0) {
-        $contrasena=$_POST['contrasena'];
-        if ($row['contrasena']!=$contrasena) {
-            header('Location: ../login.php?e=3');
-        }else{
-            session_start();
-            $_SESSION['codeUsuario']=$row['codeUsuario'];
-            $_SESSION['emailUsuario']=$row['emailUsuario'];
-            $_SESSION['nombreUsuario']=$row['nombreUsuario'];
-            header('Location: ../');
-        }
-    }else{
-        header('Location: ../login.php?e=2');
+
+if(isset($_POST['Registrar'])){
+    if (strlen($_POST['nomusu']) >= 1  && strlen($_POST['apeusu']) >= 1  && strlen($_POST['emausu']) >= 1  && strlen($_POST['pasusu']) >= 1) {
+    $nomusu = trim($_POST['nomusu']);
+    $apeusu = trim($_POST['apeusu']);
+    $emausu = trim($_POST['emausu']);
+    $pasusu = trim($_POST['pasusu']);
+    $sql = "INSERT INTO USUARIO (nomusu,apeusu,emausu,pasusu) VALUES ('$nomusu','$apeusu','$emausu','$pasusu')";
+    $result = mysqli_query($con,$sql);
+    if ($result) {
+      header('Location: ../login.php');
+   
     }
-}else{
-    header('Location: ../login.php?e=1');
-}
+    }
+  }
+
+?>
