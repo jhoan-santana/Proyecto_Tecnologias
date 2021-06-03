@@ -33,26 +33,24 @@
       </div>
     </div>
     </nav>
-
-		<div class="wave" style="height: 150px; overflow: hidden;">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          style="height: 100%; width: 100%;">
-          <path
-            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-            style="stroke: none; fill: #ffff;">
-          </path>
-        </svg>
-    </div>
+	<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	</header>
+
 	<div class="main-content">
 		<div class="content-page">
-			<div class="title-section">Productos destacados</div>
+			<h1 class = "titulo">Tarjeta gráfica</h1>
+			<div class= contenedor-grafica>
+              <div class= "contenido-textos">
+                  <h3><span>1</span>¿Qué son las tarjetas gráficas?</h3>
+                  <p>La tarjeta gráfica o tarjeta de vídeo de un componente que viene integrado en la placa base del PC o se instala a parte para ampliar sus capacidades. Concretamente, esta tarjeta está dedicada al procesamiento de datos relacionados con el vídeo y las imágenes que se están reproduciendo en el ordenador. </p>
+              </div>
+         	 </div>
 			<div class="products-list" id="space-list">
 			</div>
 		</div>
 	</div>
+
+
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
@@ -82,12 +80,16 @@
 				}
 			});
 		});
+
+
 		function formato_precio(valor){
 			//10.99
 			let svalor=valor.toString();
 			let array=svalor.split(".");
 			return "S/. "+array[0]+".<span>"+array[1]+"</span>";
 		}
+
+		
 	</script>
 </body>
 </html>
