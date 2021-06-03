@@ -24,9 +24,9 @@
     <h1>Inicia sesión</h1>
       <form class= "form" action="servicios/login.php" method="POST">
 
-        <input type="text" name="emailUsuario" placeholder="Username">
+        <input type="text" name="emailUsuario" placeholder="Correo electronico">
 
-        <input type="password" name="contrasena" placeholder="Password">
+        <input type="password" name="contrasena" placeholder="Contraseña">
         <?php
           if (isset($_GET['e'])) { 
             switch ($_GET['e']) {
@@ -45,6 +45,10 @@
           }
         ?>
         <button type="submit">Ingresar</button>
+        <h1></h1>
+        <a class = "botonregistro" href="Register.php">Registrate en pcreate</a>
+        <h1></h1>
+        <a class = "botonregistro" href="inicio.html">Salir</a>
       </form>
     </div>
     <div class= "wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"></path></svg></div>
