@@ -21,7 +21,7 @@
 
     <div class="form-group"> 
     <h1></h1>
-    <h1>Inicia sesión</h1>
+    <h1>Hola admin</h1>
       <form class= "form" action="servicios/login.php" method="POST">
 
         <input type="text" name="emailUsuario" placeholder="Correo electronico">
@@ -46,9 +46,7 @@
         ?>
         <button type="submit">Ingresar</button>
         <h1></h1>
-        <a class = "botonregistro" href="Register.php">Registrate en pcreate</a>
-        <h1></h1>
-        <a class = "botonregistro" href="loginadmin.php">Iniciar sesión como administrador</a>
+        <a class = "botonregistro" href="Register.php">Inicia sesion como usuario</a>
         <h1></h1>
         <a class = "botonregistro" href="inicio.html">Salir</a>
       </form>
