@@ -16,19 +16,11 @@
 <body>
   <header>
     <nav>                
-      <img src="assets/logo.png" alt="" class= "imagen-logo">
+      <img src="assets/logo.png" alt="" class= "formulario-logo">
     </nav>  
-    <section class= "textos-header">
-            <h1>Arma tu computador segun tus necesidades</h1>
-            <h2>Conoce los mejores componentes para tu pc</h2>
-    </section>
-    
-
-
-
-
 
     <div class="form-group"> 
+    <h1></h1>
     <h1>Inicia sesión</h1>
       <form class= "form" action="servicios/login.php" method="POST">
 
