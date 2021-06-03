@@ -23,12 +23,18 @@
             <h2>Conoce los mejores componentes para tu pc</h2>
     </section>
     
+
+
+
+
+
     <div class="form-group"> 
-      <form action="servicios/login.php" method="POST">
-        <label for="email" class="label">Correo Electronico</label>
-        <input type="text" name="emailUsuario">
-        <label for="password" class="label" >Contraseña</label>
-        <input type="password" name="contrasena">
+    <h1>Inicia sesión</h1>
+      <form class= "form" action="servicios/login.php" method="POST">
+
+        <input type="text" name="emailUsuario" placeholder="Username">
+
+        <input type="password" name="contrasena" placeholder="Password">
         <?php
           if (isset($_GET['e'])) { 
             switch ($_GET['e']) {
