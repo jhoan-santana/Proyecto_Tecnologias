@@ -1,4 +1,4 @@
-REATE TABLE administrador(
+CREATE TABLE administrador(
 codeAdmin INT NOT NULL AUTO_INCREMENT,
 emailAdmin VARCHAR(50)NOT NULL,
 contrasenaAdmin VARCHAR(20)NOT NULL,
@@ -24,13 +24,15 @@ CREATE TABLE PRODUCTO(
 alter table PRODUCTO add rutimapro varchar(100) null;
 
 INSERT INTO PRODUCTO (nompro,despro,prepro,estado,rutimapro)
-VALUES ('Papel Crepe','Ideal para decoraci&oacute;n de trabajos escolares','14.99',1,'crepe.jpg')
+VALUES ('gabinete azul con ventilacion','Un gabinete con dimensiones de 50 cm de alto x 60 cm de largo x 25 cm de ancho','160 000',1,'gabineteazul.PNG')
 ,('Papel Bond A4','Papel ultra blanco de 180gr','9.99',1,'bonda4.jpg')
 ,('Colores Faber Castell','Caja de colores x 12 unid. + 2 de regalo','5.99',1,'colores12unid.jpg')
 ,('Ecolapices Faber Castell','Caja de ecolapices x 60 unid.','11.99',1,'ecolapices60unid.jpg')
 ,('Estuche lapices Faber Castell','Estuche de lapiceros de colores x 5 unid.','6.99',1,'lapiceros5unid.jpg')
 ,('Tempera Artesco 250 ml','Frasco de tempera Artesco de 250 ml','3.99',1,'temperaartesco.jpg')
 ,('Plastilina Norma','Caja con 12 barras plastilinas. 260 gr','5.99',1,'plastilinanorma.jpg');
+
+SELECT*FROM proyecto.PRODUCTO;
 
 CREATE TABLE USUARIO(
 	codusu int not null AUTO_INCREMENT,
