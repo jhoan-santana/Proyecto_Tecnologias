@@ -22,11 +22,10 @@
     <div class="form-group"> 
     <h1></h1>
     <h1>Hola admin</h1>
-      <form class= "form" action="servicios/login.php" method="POST">
+      <form class= "form" action="servicios/loginadmin.php" method="POST">
 
-        <input type="text" name="emailUsuario" placeholder="Correo electronico">
-
-        <input type="password" name="contrasena" placeholder="Contraseña">
+        <input type="text" name="emailAdmin" placeholder="Correo electronico">
+        <input type="password" name="contrasenaAdmin" placeholder="Contraseña">
         <?php
           if (isset($_GET['e'])) { 
             switch ($_GET['e']) {
@@ -46,7 +45,7 @@
         ?>
         <button type="submit">Ingresar</button>
         <h1></h1>
-        <a class = "botonregistro" href="Register.php">Inicia sesion como usuario</a>
+        <a class = "botonregistro" href="login.php">Inicia sesion como usuario</a>
         <h1></h1>
         <a class = "botonregistro" href="inicio.html">Salir</a>
       </form>
