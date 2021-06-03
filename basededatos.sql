@@ -21,111 +21,14 @@ CREATE TABLE PRODUCTO(
 	PRIMARY KEY (codpro)
 );
 
-CREATE TABLE GABINETE(
-	codpro int not null AUTO_INCREMENT,
-	nompro varchar(50) null,
-	despro varchar(100) null,
-	prepro numeric(6,2) null,
-	estado int null,
-    rutimapro varchar(100) null,
-	CONSTRAINT pk_producto
-	PRIMARY KEY (codpro)
-
-);
-
-CREATE TABLE PROCESADOR(
-	codpro int not null AUTO_INCREMENT,
-	nompro varchar(50) null,
-	despro varchar(100) null,
-	prepro numeric(6,2) null,
-	estado int null,
-    rutimapro varchar(100) null,
-	CONSTRAINT pk_producto
-	PRIMARY KEY (codpro)
-);
-
-CREATE TABLE MOTHERBOARD(
-	codpro int not null AUTO_INCREMENT,
-	nompro varchar(50) null,
-	despro varchar(100) null,
-	prepro numeric(6,2) null,
-	estado int null,
-    rutimapro varchar(100) null,
-	CONSTRAINT pk_producto
-	PRIMARY KEY (codpro)
-);
 
 
-CREATE TABLE RAM(
-	codpro int not null AUTO_INCREMENT,
-	nompro varchar(50) null,
-	despro varchar(100) null,
-	prepro numeric(6,2) null,
-	estado int null,
-    rutimapro varchar(100) null,
-	CONSTRAINT pk_producto
-	PRIMARY KEY (codpro)
-);
-
-CREATE TABLE SSD(
-	codpro int not null AUTO_INCREMENT,
-	nompro varchar(50) null,
-	despro varchar(100) null,
-	prepro numeric(6,2) null,
-	estado int null,
-    rutimapro varchar(100) null,
-	CONSTRAINT pk_producto
-	PRIMARY KEY (codpro)
-);
-CREATE TABLE HDD(
-	codpro int not null AUTO_INCREMENT,
-	nompro varchar(50) null,
-	despro varchar(100) null,
-	prepro numeric(6,2) null,
-	estado int null,
-    rutimapro varchar(100) null,
-	CONSTRAINT pk_producto
-	PRIMARY KEY (codpro)
-);
-CREATE TABLE GPU(
-	codpro int not null AUTO_INCREMENT,
-	nompro varchar(50) null,
-	despro varchar(100) null,
-	prepro numeric(6,2) null,
-	estado int null,
-    rutimapro varchar(100) null,
-	CONSTRAINT pk_producto
-	PRIMARY KEY (codpro)
-);
-CREATE TABLE PSU(
-	codpro int not null AUTO_INCREMENT,
-	nompro varchar(50) null,
-	despro varchar(100) null,
-	prepro numeric(6,2) null,
-	estado int null,
-    rutimapro varchar(100) null,
-	CONSTRAINT pk_producto
-	PRIMARY KEY (codpro)
-);
-
-CREATE TABLE COOLING(
-	codpro int not null AUTO_INCREMENT,
-	nompro varchar(50) null,
-	despro varchar(100) null,
-	prepro numeric(6,2) null,
-	estado int null,
-	rutimapro varchar(100) null,
-	CONSTRAINT pk_producto
-	PRIMARY KEY (codpro)
-);
-
- 
-
+alter table GABINETE add  rutimapro varchar(100) null;
 INSERT INTO GABINETE (nompro,despro,prepro,estado,rutimapro)
-VALUES ('gabinete azul con ventilacion','Un gabinete con dimensiones de 50 cm de alto x 60 cm de largo x 25 cm de ancho','160 000',1,'gabineteazul.PNG')
+VALUES ('pipo','Un gabinete con dimensiones de 50 cm de alto x 60 cm de largo x 25 cm de ancho','160 000',1,'gabineteazul.PNG')
 ;
 
-SELECT*FROM proyecto.PRODUCTO;
+SELECT*FROM proyecto.GABINETE;
 
 CREATE TABLE USUARIO(
 	codusu int not null AUTO_INCREMENT,
