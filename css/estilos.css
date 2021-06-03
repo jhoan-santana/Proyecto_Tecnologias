@@ -265,4 +265,15 @@ form p{
 }
 
 
-  
+
+/*register*/
+
+.form-group{
+    margin-top: 30px;
+	margin-bottom: 60px;
+    background-color: white;
+    -webkit-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+    box-shadow: 0px 21px 46px -15px rgba(0,0,0,1);
+}
+
