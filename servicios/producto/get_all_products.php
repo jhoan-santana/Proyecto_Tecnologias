@@ -1,18 +1,19 @@
 <?php
-include('../ConnectionDB.php');
+include('../_conexion.php');
 $response=new stdClass();
 
-
+//$datos=array();
 $datos=[];
 $i=0;
-$sql="SELECT * FROM producto where estado=1";
+$sql="select * from producto where estado=1";
 $result=mysqli_query($con,$sql);
 while($row=mysqli_fetch_array($result)){
 	$obj=new stdClass();
-	$obj->nombreProducto=$row['nombreProducto'];
-	$obj->descripcionProducto=$row['descripcionProducto'];
-	$obj->enlaceProducto=$row['enlaceProducto'];
-	$obj->rutaimagenProducto=$row['rutaimagenProducto'];
+	$obj->codpro=$row['codpro'];
+	$obj->nompro=$row['nompro'];
+	$obj->despro=$row['despro'];
+	$obj->prepro=$row['prepro'];
+	$obj->rutimapro=$row['rutimapro'];
 	$datos[$i]=$obj;
 	$i++;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCreate</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,10 +24,8 @@
     <h1></h1>
     <h1>Inicia sesión</h1>
       <form class= "form" action="servicios/login.php" method="POST">
-
-        <input type="text" name="emailUsuario" placeholder="Correo electronico">
-
-        <input type="password" name="contrasena" placeholder="Contraseña">
+        <input type="text" name="emausu" placeholder="Correo">
+        <input type="password" name="pasusu" placeholder="Contraseña">
         <?php
           if (isset($_GET['e'])) { 
             switch ($_GET['e']) {

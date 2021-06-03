@@ -1,10 +1,14 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto</title>
+    <title>PCREA</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -26,10 +30,6 @@
         <img src="assets/logo.png" alt="" class="imagen-logo" />
         <a href="Register.php">Registrate en pcrea</a>
       </nav>
-      <section class="textos-header">
-        <h1>Arma tu computador segun tus necesidades</h1>
-        <h2>Conoce los mejores componentes para tu pc</h2>
-      </section>
       <div class="wave" style="height: 150px; overflow: hidden;">
         <svg
           viewBox="0 0 500 150"
@@ -43,40 +43,55 @@
         </svg>
       </div>
     </header>
-      <div class="maint-content">
-        <div class="title-section">Tarjeta gráfica</div>
-        <div class="products-list" id="space-list">
-        </div>
-      </div>
+    <div class="maint-content">
+      <div class="title-section">Tarjeta gráfica</div>
+      <div class="products-list" id="space-list"></div>
+    </div>
     <script type="text/javascript">
-      (function(){
+      $(document).ready(function() {
         $.ajax({
-            url:'servicios/producto/get_all_products.php',
-            type:'POST',
-            data:{},
-            success:function(data){
-              console.log(data);
-              let html='';
-              for(var i =0; i < data.datos.length; i++) {
-                html+=
-                '<div class="product-box">'+
-                '<a href="">'+
-                  '<div class="product">'+
-                    '<img src="assets/'+data.datos[i].rutaimagenProducto+'">'+
-                    '<div class="detail-title">'+data.datos[i].nombreProducto+'</div>'+
-                    '<div class="detail-description">'+data.datos[i].descripcionProducto+'</div>'+
-                    '<div class="detail-enlace">'+data.datos[i].enlaceProducto+'</div>'+
-                  '</div>'+
-                '</a>'+
-              '</div>';
-              }
-              document.getElementByld("space-list").innerHTML=html;
-            },
-            error:function(err){
-              console.error(err);
+          url: "servicios/producto/get_all_products.php",
+          type: "POST",
+          data: {},
+          success: function(data) {
+            console.log(data);
+            let html = "";
+            for (var i = 0; i < data.datos.length; i++) {
+              html +=
+                '<div class="product-box">' +
+                '<a href="producto.php?p=' +
+                data.datos[i].codpro +
+                '">' +
+                '<div class="product">' +
+                '<img src="assets/products/' +
+                data.datos[i].rutimapro +
+                '">' +
+                '<div class="detail-title">' +
+                data.datos[i].nompro +
+                "</div>" +
+                '<div class="detail-description">' +
+                data.datos[i].despro +
+                "</div>" +
+                '<div class="detail-price">' +
+                formato_precio(data.datos[i].prepro) +
+                "</div>" +
+                "</div>" +
+                "</a>" +
+                "</div>";
             }
+            document.getElementById("space-list").innerHTML = html;
+          },
+          error: function(err) {
+            console.error(err);
+          }
         });
       });
+      function formato_precio(valor) {
+        //10.99
+        let svalor = valor.toString();
+        let array = svalor.split(".");
+        return "S/. " + array[0] + ".<span>" + array[1] + "</span>";
+      }
     </script>
   </body>
   <footer>
