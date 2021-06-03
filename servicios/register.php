@@ -1,10 +1,7 @@
-
 <?php
-/*
 include('ConnectionDB.php');
 $emailUsuario=$_POST['emailUsuario'];
-$sql="INSERT INTO usuario (nombreUsuario, apellidoUsuario, emailUsuario, contrasena) VALUES ('" . $nombreUsuario ."', '" . $apellidoUsuario ."', '" . $emailUsuario ."', '" . $contrasena ."')";
-
+$sql="SELECT * FROM usuario WHERE emailUsuario='$emailUsuario'";
 $result=mysqli_query($con,$sql);
 if ($result) {
     $row=mysqli_fetch_array($result);
@@ -26,4 +23,3 @@ if ($result) {
 }else{
     header('Location: ../login.php?e=1');
 }
-*/
