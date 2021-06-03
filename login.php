@@ -24,9 +24,9 @@
     <h1>Inicia sesión</h1>
       <form class= "form" action="servicios/login.php" method="POST">
 
-        <input type="text" name="emailUsuario" placeholder="Username">
+        <input type="text" name="emailUsuario" placeholder="Correo electronico">
 
-        <input type="password" name="contrasena" placeholder="Password">
+        <input type="password" name="contrasena" placeholder="Contraseña">
         <?php
           if (isset($_GET['e'])) { 
             switch ($_GET['e']) {
