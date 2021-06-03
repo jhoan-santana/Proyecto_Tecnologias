@@ -191,7 +191,6 @@ header .textos-header{
 /*  login*/
 
 .form-group{
-
 	max-width: 600px;
     min-width: 200px;
 	margin: 0 auto;
@@ -265,3 +264,14 @@ form p{
 }
 
 
+.formulario-logo{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    min-width: 200px;
+    align-items: flex-start;
+    display:inline-block;
+    width: 15%;
+    -webkit-transition:all 100ms ease;
+	-o-transition:all 100ms ease;
+	transition:all 100ms ease;;
+}
