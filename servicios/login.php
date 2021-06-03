@@ -18,7 +18,7 @@ if ($result) {
 			$_SESSION['codusu']=$row['codusu'];
 			$_SESSION['emausu']=$row['emausu'];
 			$_SESSION['nomusu']=$row['nomusu'];
-			header('Location: ../');
+			header('Location: ../inicio.php');
 		}
 	}else{
 		header('Location: ../login.php?e=2');
