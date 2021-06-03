@@ -21,12 +21,23 @@ CREATE TABLE PRODUCTO1(
 	PRIMARY KEY (codpro)
 );
 
+<<<<<<< HEAD
 alter table PRODUCTO1 add rutimapro varchar(100) null;
 
 INSERT INTO PRODUCTO1 (nompro,despro,prepro,estado,rutimapro)
 VALUES ('gabinete azul con ventilacion','Un gabinete con dimensiones de 50 cm de alto x 60 cm de largo x 25 cm de ancho','160 000',1,'gabineteazul.PNG');
 
 SELECT*FROM proyecto.PRODUCTO1;
+=======
+
+
+alter table GABINETE add  rutimapro varchar(100) null;
+INSERT INTO GABINETE (nompro,despro,prepro,estado,rutimapro)
+VALUES ('pipo','Un gabinete con dimensiones de 50 cm de alto x 60 cm de largo x 25 cm de ancho','160 000',1,'gabineteazul.PNG')
+;
+
+SELECT*FROM proyecto.GABINETE;
+>>>>>>> 4f215441816b48722b2813b6e0e0152a90a037bf
 
 CREATE TABLE USUARIO(
 	codusu int not null AUTO_INCREMENT,
