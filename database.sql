@@ -1,21 +1,8 @@
-CREATE TABLE administrador(
-codeAdmin INT NOT NULL AUTO_INCREMENT,
-emailAdmin VARCHAR(50)NOT NULL,
-contrasenaAdmin VARCHAR(20)NOT NULL,
-CONSTRAINT fk_Administrador
-PRIMARY KEY (codeAdmin)
-);
-
-INSERT INTO administrador(emailAdmin,contrasenaAdmin)
-VALUES ('1234@gmail.com','12345');
-
-SELECT*FROM proyecto.administrador;
-
 CREATE TABLE PRODUCTO(
 	codpro int not null AUTO_INCREMENT,
 	nompro varchar(50) null,
 	despro varchar(100) null,
-	prepro numeric(6,2) null,
+	prepro number(6,2) null,
 	estado int null,
 	CONSTRAINT pk_producto
 	PRIMARY KEY (codpro)
@@ -30,7 +17,8 @@ VALUES ('Papel Crepe','Ideal para decoraci&oacute;n de trabajos escolares','14.9
 ,('Ecolapices Faber Castell','Caja de ecolapices x 60 unid.','11.99',1,'ecolapices60unid.jpg')
 ,('Estuche lapices Faber Castell','Estuche de lapiceros de colores x 5 unid.','6.99',1,'lapiceros5unid.jpg')
 ,('Tempera Artesco 250 ml','Frasco de tempera Artesco de 250 ml','3.99',1,'temperaartesco.jpg')
-,('Plastilina Norma','Caja con 12 barras plastilinas. 260 gr','5.99',1,'plastilinanorma.jpg');
+,('Plastilina Norma','Caja con 12 barras plastilinas. 260 gr','5.99',1,'plastilinanorma.jpg')
+,('Cuaderno Standford','Cuaderno cuadriculado Standford 100 hojas','3.49',1,'cuadernostandford.jpg');
 
 CREATE TABLE USUARIO(
 	codusu int not null AUTO_INCREMENT,
