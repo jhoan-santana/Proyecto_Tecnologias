@@ -25,11 +25,25 @@ codeProducto INT NOT NULL AUTO_INCREMENT,
 nombreProducto VARCHAR(50) NULL,
 descripcionProducto VARCHAR(100) NULL,
 enlaceProducto VARCHAR(50) NULL,
-CONSTRAINT fk_Producto
+estado INT NULL,
+CONSTRAINT pk_Producto
 PRIMARY KEY (codeProducto)
 );
 
-INSERT INTO producto(nombreProducto,descripcionProducto,enlaceProducto)
-VALUES ('pantalla','muy buena pantallaaa','link');
+alter table producto add rutaimagenProducto VARCHAR(100) NULL;
+
+INSERT INTO `proyecto`.`producto`
+(`nombreProducto`,
+`descripcionProducto`,
+`enlaceProducto`,
+`estado`,
+`rutaimagenProducto`)
+VALUES
+('cuarto_producto',
+'Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+when an unknown printer took a galley of type and scrambled',
+'https://lipsum.com/',1,'tarjeta.png');
+
 
 SELECT*FROM proyecto.producto;
