@@ -87,7 +87,7 @@
 									'<img src="assets/products/Chasis/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
-									'<div class="detail-price">'+data.datos[i].prepro+'</div>'+
+									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
 								'</div>'+
 							'</a>'+
 						'</div>';
@@ -99,6 +99,12 @@
 				}
 			});
 		});
+		function formato_precio(valor){
+			//10.99
+			let svalor=valor.toString();
+			let array=svalor.split(".");
+			return "$ "+array[0]+".<span>"+array[1]+"</span>";
+		}
 	</script>
 
 
@@ -134,7 +140,7 @@
 									'<img src="assets/products/Ram/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
-									'<div class="detail-price">'+data.datos[i].prepro+'</div>'+
+									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
 								'</div>'+
 							'</a>'+
 						'</div>';
@@ -146,6 +152,12 @@
 				}
 			});
 		});
+		function formato_precio(valor){
+			//10.99
+			let svalor=valor.toString();
+			let array=svalor.split(".");
+			return "$ "+array[0]+".<span>"+array[1]+"</span>";
+		}
 	</script>
 
 
