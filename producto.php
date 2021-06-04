@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/estilos.css" />
   <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -50,9 +50,10 @@
 				</div>
 				<div class="part2">
 					<h2 id="idtitle">NOMBRE PRINCIPAL</h2>
-					<h1 id="idprice">$ 123.<span>99</span></h1>
+					<h1 id="idprice">$ 123</h1>
 					<h3 id="iddescription">Descripcion del producto</h3>
 					<button onclick="iniciar_compra()">Agregar a mi configuracion</button>
+					<button onclick="iniciar_compra()">ir a sitio web</button>
 				</div>
 			</section>
 			<div class="titulo">Productos destacados</div>
