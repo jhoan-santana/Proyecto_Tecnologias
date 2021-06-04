@@ -22,8 +22,9 @@
     crossorigin="anonymous"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" 
     rel="stylesheet"/>
-
 	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="/js/rating.js"></script>
 </head>
 <body>
 	<header>
@@ -54,19 +55,36 @@
 					<h3 id="iddescription">Descripcion del producto</h3>
 					<button onclick="iniciar_compra()">Agregar a mi configuracion</button>
 					<button onclick="iniciar_compra()">ir a sitio web</button>
-					<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-					<p class="clasificacion">
-						<input id="radio1" type="radio" name="estrellas" value="1"><!--
-						--><label for="radio1">★</label><!--
-						--><input id="radio2" type="radio" name="estrellas" value="2"><!--
-						--><label for="radio2">★</label><!--
-						--><input id="radio3" type="radio" name="estrellas" value="3"><!--
-						--><label for="radio3">★</label><!--
-						--><input id="radio4" type="radio" name="estrellas" value="4"><!--
-						--><label for="radio4">★</label><!--
-						--><input id="radio5" type="radio" name="estrellas" value="5"><!--
-						--><label for="radio5">★</label>
-					</p>
+					<input name="rating" value="0" id="rating_star" type="hidden" postID="1" />
+
+					<script type="text/javascript">
+						$(function() {
+    					$("#rating_star").codexworld_rating_widget({
+			        starLength: '5',
+			        initialValue: '',
+			        callbackFunctionName: 'processRating',
+			        imageDirectory: 'images/',
+			        inputAttr: 'postID'
+						    });
+						});
+						function processRating(val, attrVal){
+						    $.ajax({
+						        type: 'POST',
+						        url: 'rating.php',
+						        data: 'postID='+attrVal+'&ratingPoints='+val,
+						        dataType: 'json',
+						        success : function(data) {
+						            if (data.status == 'ok') {
+						                alert('You have rated '+val+' to CodexWorld');
+						                $('#avgrat').text(data.average_rating);
+						                $('#totalrat').text(data.rating_number);
+						            }else{
+						                alert('Some problem occured, please try again.');
+						            }
+						        }
+						    });
+						}
+					</script>
 				</div>
 			</section>
 			<div class="titulo">Productos destacados</div>

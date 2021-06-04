@@ -477,18 +477,22 @@ button{
 }
 
 /*clasificacion*/
-
-.clasificacion input[type='radio'] {
-    opacity: 0;
-  }
-  .clasificacion label {
-    font-size: 30px;
-    color:rgb(150, 150, 150);
+.codexworld_rating_widget{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+.codexworld_rating_widget li{
+    line-height: 0px;
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 2px;
+    list-style: none;
+    float: left;
     cursor: pointer;
-  }
-  .clasificacion label:hover {
-    color: rgb(217, 215, 11);
-  }
-   .activo + label{
-   color: rgb(255, 230, 0) !important;
-   }
+}
+.codexworld_rating_widget li span{
+    display: none;
+}
