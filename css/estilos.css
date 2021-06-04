@@ -482,7 +482,7 @@ button{
     margin: 0px;
     float: left;
 }
-.codexworld_rating_widget li{
+.codexworld_rating_widget img{
     line-height: 0px;
     width: 28px;
     height: 28px;
@@ -493,6 +493,6 @@ button{
     float: left;
     cursor: pointer;
 }
-.codexworld_rating_widget li span{
+.codexworld_rating_widget img span{
     display: none;
 }
