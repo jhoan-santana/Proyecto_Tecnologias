@@ -9,10 +9,11 @@
 		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
 		crossorigin="anonymous">
 		<link rel="stylesheet" href="css/estilos.css" />
+		
 	</head>
 	<body>
 		<header>   	
-			<nav>           
+			<nav>   <a class = "logout" href="logout.php">Cierra Sesión </a>        
 				<a id="home-tab" data-toggle="tab" href="#Home" role="tab" aria-controls="home"
 								aria-selected="true">Inicio</a>
 				<img src="assets/logo.png" alt="" class= "imagen-logo">
@@ -22,6 +23,7 @@
 			
 				
 		<div class="form-group"> 
+			
 	<h1 class = "titulo2">Insertar producto</h1>
       <form action="servicios/insertarProducto.php" method="POST" enctype="multipart/form-data">
       <input type="text" name="nompro" placeholder="Nombre de Producto">
