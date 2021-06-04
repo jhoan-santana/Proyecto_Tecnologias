@@ -66,10 +66,9 @@
 					   para cajas de diseño. A menudo de metal electrogalvanizado.
 					    Su función es la de proteger los componentes del computador. </p>
 			</div>
-			</div>
-		<div class="products-list" id="space-list">
 		</div>
 	</div>
+	<div class="products-list" id="space-list"></div>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
