@@ -102,7 +102,7 @@
 			//10.99
 			let svalor=valor.toString();
 			let array=svalor.split(".");
-			return "$ "+array[0]+".<span>"+array[1]+"</span>";  
+			return "$ "+array[0];
 		}
 		function iniciar_compra(){
 			$.ajax({
