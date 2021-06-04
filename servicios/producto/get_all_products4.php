@@ -5,7 +5,7 @@ $response=new stdClass();
 //$datos=array();
 $datos=[];
 $i=0;
-$sql="select * from producto where estado=2";
+$sql="select * from producto where estado=5";
 $result=mysqli_query($con,$sql);
 while($row=mysqli_fetch_array($result)){
 	$obj=new stdClass();
