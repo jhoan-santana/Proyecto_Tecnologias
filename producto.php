@@ -55,6 +55,10 @@
 					<h3 id="iddescription">Descripcion del producto</h3>
 					<button onclick="iniciar_compra()">Agregar a mi configuracion</button>
 					<button onclick="iniciar_compra()">ir a sitio web</button>
+
+					<h1></h1>
+
+
 					<input name="rating" value="0" id="rating_star" type="hidden" postID="1" />
 
 					<script type="text/javascript">
