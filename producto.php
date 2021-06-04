@@ -8,32 +8,34 @@
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
 </head>
 <body>
-	<header>
-		<div class="logo-place"><a href="index.php"><img src="assets/logo.png"></a></div>
-		<div class="search-place">
-			<input type="text" id="idbusqueda" placeholder="Encuenta todo lo que necesitas...">
-			<button class="btn-main btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
-		</div>
-		<div class="options-place">
+<header>
+		<nav>           
+            <img src="assets/logo.png" alt="" class= "imagen-logo">
+
+			<div class="options-place">
 			<?php
 			if (isset($_SESSION['codusu'])) {
 				echo
-				'<div class="item-option"><i class="fa fa-user-circle-o" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
+				'<div class="item-option"><i class="far fa-user" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
 			}else{
 			?>
-			<div class="item-option" title="Registrate"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
-			<div class="item-option" title="Ingresar"><i class="fa fa-sign-in" aria-hidden="true"></i></div>
+			<div class="item-option" title="Registrate"><i class="far fa-user" aria-hidden="true"></i></div>
+			<div class="item-option" title="Ingresar"><i class="far fa-user" aria-hidden="true"></i></div>
 			<?php
 			}
 			?>
 			<div class="item-option" title="Mis compras">
-				<a href="carrito.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 			</div>
 		</div>
+  		</nav>
+		<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	</header>
+
 	<div class="main-content">
 		<div class="content-page">
 			<section>
