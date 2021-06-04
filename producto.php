@@ -111,7 +111,7 @@
 				data:{
 					codpro:p
 				},
-				success:function(data){
+				success:function(data){   
 					console.log(data);
 					if (data.state) {
 						alert(data.detail);
