@@ -22,13 +22,32 @@
     crossorigin="anonymous"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" 
     rel="stylesheet"/>
+
+	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
 	
 </head>
 <body>
 	<header>
 		<nav>           
             <img src="assets/logo.png" alt="" class= "imagen-logo">
-            <a href="carrito.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+
+			<div class="options-place">
+			<?php
+			if (isset($_SESSION['codusu'])) {
+				echo
+				'<div class="item-option"><i class="far fa-user" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
+			}else{
+			?>
+			<div class="item-option" title="Registrate"><i class="far fa-user" aria-hidden="true"></i></div>
+			<div class="item-option" title="Ingresar"><i class="far fa-user" aria-hidden="true"></i></div>
+			<?php
+			}
+			?>
+			<div class="item-option" title="Mis compras">
+				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
+			</div>
+		</div>
+
   		</nav>
 		<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	</header>
