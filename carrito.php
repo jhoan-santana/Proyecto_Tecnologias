@@ -55,10 +55,24 @@
 
 	<div class="main-content">
 		<div class="content-page">
-			<div class="titulo">Mi configuración</div>
+			<div class="titulo">Mi PC</div>
 			<div class="body-pedidos" id="space-list">
 			</div>
-			<button onclick="procesar_compra()" style="margin-top: 5px;">Guardar configuración</button>
+			<!--<input class="ipt-procom" type="text" id="dirusu" placeholder="Dirección">
+			<br>
+			<input class="ipt-procom" type="text" id="telusu" placeholder="Celular">
+			<br>
+			<h4>Tipos de pago</h4>
+			<div class="metodo-pago">
+				<input type="radio" name="tipopago" value="1" id="tipo1">
+				<label for="tipo1">Pago por transferencia</label>
+			</div>
+			<div class="metodo-pago">
+				<input type="radio" name="tipopago" value="2" id="tipo2">
+				<label for="tipo2">Pago con tarjeta de crédito/débito</label>
+			</div>-->
+
+			<button onclick="procesar_compra()" style="margin-top: 5px;">Guardar Mi PC</button>
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -82,8 +96,8 @@
 								'<p><b>Precio:</b> S/ '+data.datos[i].prepro+'</p>'+
 								'<p><b>Fecha:</b> '+data.datos[i].fecped+'</p>'+
 								'<p><b>Estado:</b> '+data.datos[i].estado+'</p>'+
-								'<p><b>Dirección:</b> '+data.datos[i].dirusuped+'</p>'+
-								'<p><b>Celular:</b> '+data.datos[i].telusuped+'</p>'+
+								/*'<p><b>Dirección:</b> '+data.datos[i].dirusuped+'</p>'+
+								'<p><b>Celular:</b> '+data.datos[i].telusuped+'</p>'+*/
 							'</div>'+
 						'</div>';
 						sumaMonto+=parseInt(data.datos[i].prepro)+1;
