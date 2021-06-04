@@ -443,5 +443,16 @@ button{
 	font-size: 16px;
 }
 
+.logout{
+    margin-left: 5%;
+    display: flex;
+    justify-content:right;
+	padding: 5px 10px;
+	line-height: 30px;
+	font-size: 15px;
+	cursor: pointer;
+	color:#fff;
+	font-family: 'Sen', sans-serif;
 
+}
 
