@@ -12,11 +12,8 @@
 	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
 </head>
 <body>
-<header>
-		<nav>           
-            <img src="assets/logo.png" alt="" class= "imagen-logo">
-
-			<div class="options-place">
+	<header>   	
+		<div class="options-place">
 			<?php
 			if (isset($_SESSION['codusu'])) {
 				echo
@@ -28,11 +25,11 @@
 			<?php
 			}
 			?>
-			<div class="item-option" title="Mis compras">
+			<div class="logo-place"><a href="inicio.php"><img src="assets/logo.png"></a></div>
+			<div class="item-option" title="Mi PC">
 				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 			</div>
 		</div>
-  		</nav>
 		<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	</header>
 
@@ -40,7 +37,7 @@
 		<div class="content-page">
 			<section>
 				<div class="part1">
-					<img id="idimg" src="assets/products/crepe.jpg">
+					<img id="idimg" src="assets/logo.png">
 				</div>
 				<div class="part2">
 					<h2 id="idtitle">NOMBRE PRINCIPAL</h2>
@@ -49,7 +46,7 @@
 					<button onclick="iniciar_compra()">Comprar</button>
 				</div>
 			</section>
-			<div class="title-section">Productos destacados</div>
+			<div class="titulo">Productos destacados</div>
 			<div class="products-list" id="space-list">
 			</div>
 		</div>

@@ -39,6 +39,8 @@ header{
     margin-bottom:0px;   
 }
 
+
+
 .imagen-logo{
     min-width: 200px;
     align-items: flex-start;
@@ -242,9 +244,8 @@ form p{
 }
 
 
-.product-box{
-    
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+.product-box{  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
     padding: 0px;
     display: block;
     text-align: center;
@@ -260,6 +261,7 @@ form p{
     .product-box {
         width: calc(100%/2 - 20px);
     }
+
   }
   
   /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -285,12 +287,12 @@ form p{
 	border-radius: 10px 10px 0 0;
 }
 .detail-title{
-    margin-bottom: 2%;
-    padding: 5px;
+    line-height : 20px;
+    margin-bottom: 12%;
+    margin-top: 12%;
 	text-align: center;
-	font-size: 25px;
+	font-size:100%;
     color:blueviolet;
-	line-height : 25px;
 	width: calc(100% - 10px);
 	height: 35px;
 }
@@ -319,3 +321,126 @@ form p{
 	display: table;
 	width: 100%;
 }
+
+/*header 2.0 */
+
+
+.logo-place{
+	width: 150px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.logo-place img{
+	width: 100%;
+}
+
+div.options-place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	color:#fff;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.item-option{
+    display: flex;
+    justify-content:right;
+	padding: 5px 10px;
+	line-height: 30px;
+	font-size: 30px;
+	cursor: pointer;
+	color:#fff;
+	font-family: 'Sen', sans-serif;
+}
+
+.item-option p{
+	font-size: 15px;
+	margin: 0;
+	margin-left: 5px;
+}
+
+.fas.fa-desktop{
+    color:#fff;
+}
+
+/*Producto*/
+
+.main-content{
+	margin-top: 60px;
+	width: 100%;
+	font-family: 'Sen', sans-serif;
+}
+.content-page{
+	margin: auto;
+	padding: 10px;
+	width: calc(100% - 20px);
+	max-width: 1180px;
+}
+.content-page section{
+	display: flex;
+	background: #fff;
+}
+.part1{
+	padding: 10px;
+	width: calc(60% - 20px);
+}
+.part2{
+	padding: 10px;
+	width: calc(40% - 20px);
+	border-left: 1px solid #ddd;
+}
+.part1 img{
+	width: 100%;
+}
+.part2 *{
+	margin: 10px 0;
+	font-family: 'Sen', sans-serif;
+}
+.part2 h2{
+	color: #333;
+	font-size: 30px;
+}
+.part2 h1{
+	color: var(--main-red);
+	font-size: 45px;
+}
+.part2 h1 span{
+	color: blueviolet;
+	font-size: 30px;
+}
+.part2 h3{
+	color: #333;
+	font-weight: normal;
+}
+button{
+	border-style: none;
+	border-radius: 5px;
+	padding: 13px 20px;
+	color: #fff;
+	background: blueviolet;
+	cursor: pointer;
+	font-size: 16px;
+}
+.part2 button{
+	border-style: none;
+	border-radius: 5px;
+	padding: 13px 20px;
+	color: #fff;
+	background: blueviolet;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+
+
