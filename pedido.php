@@ -12,23 +12,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
 </head>
 <body>
 	<header>
 		<div class="logo-place"><a href="index.php"><img src="assets/logo.png"></a></div>
-		<div class="search-place">
-			<input type="text" id="idbusqueda" placeholder="Encuenta todo lo que necesitas...">
-			<button class="btn-main btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
-		</div>
 		<div class="options-place">
 			<?php
 			if (isset($_SESSION['codusu'])) {
 				echo
-				'<div class="item-option"><i class="fa fa-user-circle-o" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
+				'<div class="item-option"><i class="far fa-user" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
 			}else{
 			?>
-			<div class="item-option" title="Registrate"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
-			<div class="item-option" title="Ingresar"><i class="fa fa-sign-in" aria-hidden="true"></i></div>
+			<div class="item-option" title="Registrate"><i class="far fa-user" aria-hidden="true"></i></div>
+			<div class="item-option" title="Ingresar"><i class="far fa-user" aria-hidden="true"></i></div>
 			<?php
 			}
 			?>

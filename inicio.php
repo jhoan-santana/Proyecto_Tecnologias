@@ -5,23 +5,12 @@
 <html>
 <head>
 	<title>PCREA</title>
-	<html lang="en">
+  <html lang="en">
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="css/estilos.css" />
-  <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon" />
-  <link rel="preconnect" href="https://fonts.gstatic.com/" />
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" 
-    rel="stylesheet"/>
+	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
 	
 </head>
 <body>
@@ -32,16 +21,16 @@
 			<?php
 			if (isset($_SESSION['codusu'])) {
 				echo
-				'<div class="item-option"><i class="fa fa-user-circle-o" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
+				'<div class="item-option"><i class="far fa-user" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
 			}else{
 			?>
-			<div class="item-option" title="Registrate"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div>
-			<div class="item-option" title="Ingresar"><i class="fa fa-sign-in" aria-hidden="true"></i></div>
+			<div class="item-option" title="Registrate"><i class="far fa-user" aria-hidden="true"></i></div>
+			<div class="item-option" title="Ingresar"><i class="far fa-user" aria-hidden="true"></i></div>
 			<?php
 			}
 			?>
-			<div class="item-option" title="Mis compras">
-				<a href="carrito.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+			<div class="item-option" title="Tu configuración">
+				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 			</div>
 		</div>
   		</nav>
