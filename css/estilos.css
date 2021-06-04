@@ -235,7 +235,7 @@ form p{
 }
 
 
-/*index.css*/
+/*inicio.css*/
 
 
 .products-list{
@@ -243,21 +243,15 @@ form p{
 	width: 100%;
 }
 
-
-.product-box{  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-    padding: 0px;
-    display: block;
-    text-align: center;
-    background-color: #f1f1f1;
-    display: inline-table;
+.product-box{
+	display: inline-table;
 	padding: 10px;
-	width: calc(100%/4 - 20px);
+	width: calc(100%/5 - 20px);
 }
 
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1100px) {
     .product-box {
         width: calc(100%/2 - 20px);
     }
@@ -298,10 +292,10 @@ form p{
 }
 .detail-description{
     line-height : 15px;
-    margin-bottom: 10%;
+    margin-bottom: 30%;
     margin-top: 10%;
     text-align: center;
-	font-size: 14px;
+	font-size: 90%;
 	color: #333;
 	padding: 5px;
 	width: calc(100% - 10px);
