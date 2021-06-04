@@ -171,3 +171,14 @@ create table PEDIDO(
 	telusuped varchar(12) not null,
 	PRIMARY KEY (codped)
 );
+
+CREATE TABLE `post_rating` (
+ `rating_id` int(11) NOT NULL AUTO_INCREMENT,
+ `post_id` int(11) NOT NULL,
+ `rating_number` int(11) NOT NULL,
+ `total_points` int(11) NOT NULL,
+ `created` datetime NOT NULL,
+ `modified` datetime NOT NULL,
+ `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1 = Block, 0 = Unblock',
+ PRIMARY KEY (`rating_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
