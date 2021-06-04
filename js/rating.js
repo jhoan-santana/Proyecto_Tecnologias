@@ -6,7 +6,7 @@
         var b = p&&p.starLength?p.starLength:"5";
         var c = p&&p.callbackFunctionName?p.callbackFunctionName:"";
         var e = p&&p.initialValue?p.initialValue:"0";
-        var d = p&&p.imageDirectory?p.imageDirectory:"images";
+        var d = p&&p.imageDirectory?p.imageDirectory:"assets";
         var r = p&&p.inputAttr?p.inputAttr:"";
         var f = e;
         var g = a(this);
@@ -40,7 +40,7 @@
             var a = $("<ul>");
             a.addClass("codexworld_rating_widget");
             for(var i=1;i<=b;i++){
-                a.append('<li style="background-image:url('+d+'/widget_star.gif)"><span>'+i+'</span></li>')
+                a.append('<li style="background-image:url('+d+'estrella.png)"><span>'+i+'</span></li>')
             }
             a.insertAfter(g);
             if(e != ""){
