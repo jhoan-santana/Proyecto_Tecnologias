@@ -14,6 +14,9 @@ while($row=mysqli_fetch_array($result)){
 	$obj->despro=$row['despro'];
 	$obj->prepro=$row['prepro'];
 	$obj->rutimapro=$row['rutimapro'];
+	
+	//$obj->rutimapro=($row['rutimapro']base64_encode);
+	/*img src="data:image/png;base64,<?php echo base64_encode($row['rutimapro']); ?>"*/
 	$datos[$i]=$obj;
 	$i++;
 }
@@ -22,3 +25,4 @@ $response->datos=$datos;
 mysqli_close($con);
 header('Content-Type: application/json');
 echo json_encode($response);
+?>

@@ -22,6 +22,7 @@ CREATE TABLE PRODUCTO(
 	PRIMARY KEY (codpro)
 );
 
+SELECT*FROM proyecto.producto;
  
 /* gabinete*/
 INSERT INTO PRODUCTO (nompro,despro,prepro,estado,rutimapro)
