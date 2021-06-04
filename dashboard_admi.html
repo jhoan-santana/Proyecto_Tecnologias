@@ -13,30 +13,37 @@
 	<body>
 		<header>   	
 			<nav>           
-				<a id="home-tab" data-toggle="tab" href="#Home" role="tab" aria-controls="home"
-								aria-selected="true">Inicio</a>
+				<a href="inicio.php">Inicio</a>
 				<img src="assets/logo.png" alt="" class= "imagen-logo">
 				<a id="table-tab" data-toggle="tab" href="#Table" role="tab" aria-controls="tabla" 
 								aria-selected="false">Tablas</a>
 			</nav>  
 			
 				
-		<div class="form-group"> 
-	<h1 class = "titulo2">Insertar producto</h1>
-      <form action="servicios/insertarProducto.php" method="POST" enctype="multipart/form-data">
-      <input type="text" name="nompro" placeholder="Nombre de Producto">
-      <input type="text" name="despro" placeholder="Descripcion de Producto">
-      <input type="text" name="prepro" placeholder="precio de producto">
-      <input type="text" name="estado" placeholder="estado">
-      <input type="text" name="rutimapro" placeholder="buscar imagen">
-      <input type="submit" name="Insertar">
-      </form>
-    </div>
-<h1></h1>
-	<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
+			<div class="form-group"> 
+				<h1 class = "titulo2">Insertar producto</h1>
+				<form action="servicios/insertarProducto.php" method="POST" enctype="multipart/form-data">
+					<input type="text" name="nompro" placeholder="Nombre de Producto">
+					<input type="text" name="despro" placeholder="Descripcion de Producto">
+					<input type="text" name="prepro" placeholder="precio de producto">
+					<select name="estado">
+						<option value="1">Gabinete</option> 
+						<option value="2">RAM</option> 
+						<option value="3">Almacenamiento</option>
+						<option value="4">CPU</option> 
+						<option value="5">GPU</option> 
+						<option value="6">Mother</option> 
+						<option value="7">PSU</option> 
+						<option value="8">Refrigeración</option> 
+					</select>
+					<input type="text" name="rutimapro" placeholder="buscar imagen">
+					<input type="submit" name="Insertar">
+				</form>
+			</div>
+			<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	
 
-</header>
+		</header>
 
 	</body>
 		
