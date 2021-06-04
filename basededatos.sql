@@ -68,76 +68,76 @@ VALUES ('HDD 500gb',' Disco duro de 500gb a 7200rpm','150 000',3,'hdd1.PNG'),
 
 /*Cpu*/
 INSERT INTO PRODUCTO (nompro,despro,prepro,estado,rutimapro)
-VALUES ('Ryzen 3 ',' Ryzen de 5ta generacion con 4 nucleos y 8 hilos de trabajo sin gráficos integrados','150 000',4,'ryzen3.PNG'),
-('Ryzen 5 ',' Ryzen de 5ta generacion con 6 nucleos y 12 hilos de trabajo sin gráficos integrados','150 000',4,'ryzen5.PNG'),
-('Ryzen 7 ',' Ryzen de 5ta generacion con 8 nucleos y 16 hilos de trabajo sin gráficos integrados','150 000',4,'ryzen7.PNG'),
-('Ryzen 9 ',' Ryzen de 5ta generacion con 12 nucleos y 24 hilos de trabajo sin gráficos integrados','150 000',4,'ryzen9.PNG'),
+VALUES ('Ryzen 3 ',' Ryzen de 5ta generacion con 4 nucleos y 8 hilos de trabajo sin gráficos integrados','690 000',4,'ryzen3.PNG'),
+('Ryzen 5 ',' Ryzen de 5ta generacion con 6 nucleos y 12 hilos de trabajo sin gráficos integrados','1 110 000',4,'ryzen5.PNG'),
+('Ryzen 7 ',' Ryzen de 5ta generacion con 8 nucleos y 16 hilos de trabajo sin gráficos integrados','1 580 000',4,'ryzen7.PNG'),
+('Ryzen 9 ',' Ryzen de 5ta generacion con 12 nucleos y 24 hilos de trabajo sin gráficos integrados','3 670 000',4,'ryzen9.PNG'),
 
 
-('Intel i3 ',' Intel de 11va generacion con 4 nucleos y 8 hilos de trabajo con gráficos integrados','150 000',4,'intel3.PNG'),
-('Intel i5 ',' Intel de 11va generacion con 6 nucleos y 12 hilos de trabajo con gráficos integrados','150 000',4,'intel5.PNG'),
-('Intel i7 ',' Intel de 11va generacion con 8 nucleos y 16 hilos de trabajo con gráficos integrados','150 000',4,'intel7.PNG'),
-('Intel i9 ',' Intel de 11va generacion con 8 nucleos y 16 hilos de trabajo con gráficos integrados','150 000',4,'intel9.PNG');
+('Intel i3 ',' Intel de 11va generacion con 4 nucleos y 8 hilos de trabajo con gráficos integrados','450 000',4,'inteli3.PNG'),
+('Intel i5 ',' Intel de 11va generacion con 6 nucleos y 12 hilos de trabajo con gráficos integrados','750 00',4,'inteli5.PNG'),
+('Intel i7 ',' Intel de 11va generacion con 8 nucleos y 16 hilos de trabajo con gráficos integrados','1 500 000',4,'inteli7.PNG'),
+('Intel i9 ',' Intel de 11va generacion con 8 nucleos y 16 hilos de trabajo con gráficos integrados',' 2 170 000',4,'inteli9.PNG');
 
 /*gpu*/
 INSERT INTO PRODUCTO (nompro,despro,prepro,estado,rutimapro)
-VALUES ('Gráfica Nvidia gt 710 ',' Tarjeta gráfica de uso de infomatica con 1gb de vram  ','150 000',5,'nvidia1.PNG'),
- ('Gráfica Nvidia gtx 1650 super ',' Tarjeta gráfica de uso de juegos con 4gb de vram  ','150 000',5,'nvidia2.PNG'),
- ('Gráfica Nvidia gtx 1660ti ',' Tarjeta gráfica de uso de juegos con 6gb de vram  ','150 000',5,'nvidia3.PNG'),
- ('Gráfica Nvidia RTX 3070 ',' Tarjeta gráfica de uso de juegos con 8gb de vram  ','150 000',5,'nvidia4.PNG'),
- ('Gráfica Nvidia RTX 3090 ',' Tarjeta gráfica de uso de juegos con 24gb de vram  ','150 000',5,'nvidia5.PNG'),
+VALUES ('Gráfica Nvidia gt 710 ',' Tarjeta gráfica de uso de infomatica con 2gb de vram  ','410 000',5,'nvidia1.PNG'),
+ ('Gráfica Nvidia gtx 1650 super ',' Tarjeta gráfica de uso de juegos con 4gb de vram  ','2 320 000',5,'nvidia2.PNG'),
+ ('Gráfica Nvidia gtx 1660ti ',' Tarjeta gráfica de uso de juegos con 6gb de vram  ','No stock',5,'nvidia3.PNG'),
+ ('Gráfica Nvidia RTX 3070 ',' Tarjeta gráfica de uso de juegos con 8gb de vram  ','6 750 000',5,'nvidia4.PNG'),
+ ('Gráfica Nvidia RTX 3090 ',' Tarjeta gráfica de uso de juegos con 24gb de vram  ','No stock',5,'nvidia5.PNG'),
  
- ('Gráfica AMD Radeon rx 460 ',' Tarjeta gráfica de uso de infomatica con 4gb de vram  ','150 000',5,'amd1.PNG'),
- ('Gráfica AMD Radeon rx 590 ',' Tarjeta gráfica de uso de juegos con 8gb de vram  ','150 000',5,'amd2.PNG'),
- ('Gráfica AMD Radeon rx 5600XT ',' Tarjeta gráfica de uso de juegos con 8gb de vram  ','150 000',5,'amd3.PNG'),
- ('Gráfica AMD Radeon rx 6800XT ',' Tarjeta gráfica de uso de juegos con 16gb de vram  ','150 000',5,'amd4.PNG'),
- ('Gráfica AMD Radeon rx 6900XT ',' Tarjeta gráfica de uso de juegos con 16gb de vram  ','150 000',5,'amd5.PNG');
+ ('Gráfica AMD Radeon rx 460 ',' Tarjeta gráfica de uso de infomatica con 4gb de vram  ',' 1 120 000',5,'radeon1.PNG'),
+ ('Gráfica AMD Radeon rx 590 ',' Tarjeta gráfica de uso de juegos con 8gb de vram  ','No stock',5,'radeon2.PNG'),
+ ('Gráfica AMD Radeon rx 5600XT ',' Tarjeta gráfica de uso de juegos con 8gb de vram  ','4 170 000',5,'radeon3.PNG'),
+ ('Gráfica AMD Radeon rx 6800XT ',' Tarjeta gráfica de uso de juegos con 16gb de vram  ','no stock',5,'radeon4.PNG'),
+ ('Gráfica AMD Radeon rx 6900XT ',' Tarjeta gráfica de uso de juegos con 16gb de vram  ','no stock',5,'radeon5.PNG');
 
 /*Mother*/
 INSERT INTO PRODUCTO (nompro,despro,prepro,estado,rutimapro)
 VALUES ('Mother Msi b450m PRO-m2 MAX ',' Tarjeta madre de chipset b450 con socket am4 preparado para la 2da generación de ryzen en adelante'
-,'150 000',6,'amd1.PNG'),
+,'390 000',6,'amd1.PNG'),
 ('Mother GIGABYTE X570 UD ',' Tarjeta madre de chipset x570 con socket am4 preparado para la 3ra generación de ryzen en adelante'
-,'150 000',6,'amd2.PNG'),
+,'630 000 ',6,'amd2.PNG'),
 ('Mother GIGABYTE b550 GAMING X V2 ',' Tarjeta madre de chipset b550 con socket am4 preparado para la 3ra generación de ryzen en adelante'
-,'150 000',6,'amd3.PNG'),
+,'520 000',6,'amd3.PNG'),
 ('Mother AOURUS ELITE b450 ',' Tarjeta madre de chipset b450 con socket am4 preparado para la 2da generación de ryzen en adelante'
-,'150 000',6,'amd4.PNG'),
+,'610 000 ',6,'amd4.PNG'),
 ('Mother MSI X570 Gaming Pro Carbon WiFi ',' Tarjeta madre de chipset x570 con socket am4 preparado para la 3ra generación de ryzen en adelante'
-,'150 000',6,'amd5.PNG'),
+,'970 000',6,'amd5.PNG'),
 
 ('Mother GIGABYTE b460 HD3 ',' Tarjeta madre de chipset b460 con socket LGA 1151 preparado para la 9na y 10ma generación de intel'
-,'150 000',6,'intel1.PNG'),
+,'355 000',6,'intel1.PNG'),
 ('Mother ASUS TUF gaming b460-plus',' Tarjeta madre de chipset b460 con socket LGA 1151 preparado para la 9na y 10ma generación de intel'
-,'150 000',6,'intel2.PNG'),
+,'770 000',6,'intel2.PNG'),
 ('Mother ASUS PRIME b560-PLUS',' Tarjeta madre de chipset b560 con socket LGA 1200 preparado para la 11va generación de intel'
-,'150 000',6,'intel3.PNG'),
+,'410 000',6,'intel3.PNG'),
 ('Mother AOURUS B560 AOURUS PRO AX ',' Tarjeta madre de chipset b560 con socket LGA 1200 preparado para la 11va generación de intel'
-,'150 000',6,'intel4.PNG'),
+,'750 000',6,'intel4.PNG'),
 ('Mother ASROCK B560 PRO4 ',' Tarjeta madre de chipset b560 con socket LGA 1200 preparado para la 11va generación de intel'
-,'150 000',6,'intel5.PNG');
+,'530 000',6,'intel5.PNG');
 
 /*psu*/
 INSERT INTO PRODUCTO (nompro,despro,prepro,estado,rutimapro)
-VALUES ('EVGA 500w','Fuente de poder de 500w con certificación 80plus Bronze ','150 000',7,'psu1.PNG'),
-('EVGA BR 600w','Fuente de poder de 600w con certificación 80plus Bronze ','150 000',7,'psu2.PNG'),
-('Gamemax 750w','Fuente de poder de 750w con certificación 80plus Gold ','150 000',7,'psu3.PNG'),
-('EVGA 850w','Fuente de poder de 850w con certificación 80plus Bronze ','150 000',7,'psu4.PNG'),
-('Seasonic Prime Gold 1000w','Fuente de poder de 1000w con certificación 80plus Gold ','150 000',7,'psu5.PNG');
+VALUES ('EVGA 500w','Fuente de poder de 500w con certificación 80plus Bronze ',' 186 000',7,'psu1.PNG'),
+('EVGA BR 600w','Fuente de poder de 600w con certificación 80plus Bronze ','194 000',7,'psu2.PNG'),
+('Gamemax 750w','Fuente de poder de 750w con certificación 80plus Gold ','321 000',7,'psu3.PNG'),
+('EVGA 850w','Fuente de poder de 850w con certificación 80plus Bronze ','579 000',7,'psu4.PNG'),
+('Seasonic Prime Gold 1000w','Fuente de poder de 1000w con certificación 80plus Gold ','850 000',7,'psu5.PNG');
 
 /*Refrigeracion*/
 INSERT INTO PRODUCTO (nompro,despro,prepro,estado,rutimapro)
-VALUES ('Kit de ventilacion ARGB','Ventilador de 120mm con controlador ARGB','150 000',8,'kit1.PNG'),
-('Kit de ventilacion ','Ventilador de 120mm ','150 000',8,'kit2.PNG'),
-('Kit de 3 ventiladores ARGB','3 ventiladores de 120mm con controlador ARGB','150 000',8,'kit3.PNG'),
+VALUES ('Kit de ventilacion ARGB','Ventilador de 120mm con controlador ARGB','50 000',8,'kit1.PNG'),
+('Kit de ventilacion ','Ventilador de 120mm ','40 000',8,'kit2.PNG'),
+('Kit de 3 ventiladores ARGB','3 ventiladores de 120mm con controlador ARGB','55 000',8,'kit3.PNG'),
 
-(' Cooler master Hyper 212 Evo','Disipador por aire para cpu de 120mm ','150 000',8,'aire1.PNG'),
-(' Noctua Nh-d15','Disipador por aire para cpu con 2 ventiladores de 120mm ','150 000',8,'aire2.PNG'),
-(' Thermatalke ','Disipador por aire para cpu intel de 80mm ','150 000',8,'aire3.PNG'),
+(' Cooler master Hyper 212 Evo','Disipador por aire para cpu de 120mm ','170 000',8,'aire1.PNG'),
+(' Noctua Nh-d15','Disipador por aire para cpu con 2 ventiladores de 120mm ','380 000 ',8,'aire2.PNG'),
+(' Thermatalke ','Disipador por aire para cpu intel de 80mm ','80 000',8,'aire3.PNG'),
 
-(' Golden Field sf120rgb ','Refrigeración liquida de 120mm para cpu ','150 000',8,'liquida1.PNG'),
-(' TCorsair Hydro series h100 ','Refrigeración liquida de 240mm para cpu ','150 000',8,'liquida2.PNG'),
-(' TCorsair Hydro series h80i ','Refrigeración liquida de 120mm para cpu ','150 000',8,'liquida3.PNG');
+(' Golden Field sf120rgb ','Refrigeración liquida de 120mm para cpu ','210 000',8,'liquida1.PNG'),
+(' TCorsair Hydro series h100 ','Refrigeración liquida de 240mm para cpu ','450 000',8,'liquida2.PNG'),
+(' TCorsair Hydro series h80i ','Refrigeración liquida de 120mm para cpu ','390 000',8,'liquida3.PNG');
 
 
 SELECT*FROM proyecto.PRODUCTO;
