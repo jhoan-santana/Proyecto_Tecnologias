@@ -110,6 +110,7 @@
 							document.getElementById("idtitle").innerHTML=data.datos[i].nompro;
 							document.getElementById("idprice").innerHTML=formato_precio(data.datos[i].prepro);
 							document.getElementById("iddescription").innerHTML=data.datos[i].despro;
+							
 						}
 						html+=
 						'<div class="product-box">'+

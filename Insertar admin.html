@@ -23,12 +23,29 @@
 								
 								
 			</nav>  
-			<h1 class = "titulo2"> <a href = "inicio admin.php"> Ver producto</a> </h1>
 			
+		
+			<div class="form-group"> 
 				
-				<h1 class = "titulo2"> <a href = "Insertar admin.html"> Insertar producto</a> </h1>
-		
-		
+				<h1 class = "titulo2">Insertar producto</h1>
+				<form action="servicios/insertarProducto.php" method="POST" enctype="multipart/form-data">
+					<input type="text" name="nompro" placeholder="Nombre de Producto">
+					<input type="text" name="despro" placeholder="Descripcion de Producto">
+					<input type="text" name="prepro" placeholder="precio de producto">
+					<select name="estado">
+						<option value="1">Gabinete</option> 
+						<option value="2">RAM</option> 
+						<option value="3">Almacenamiento</option>
+						<option value="4">CPU</option> 
+						<option value="5">GPU</option> 
+						<option value="6">Mother</option> 
+						<option value="7">PSU</option> 
+						<option value="8">Refrigeración</option> 
+					</select>
+					<input type="text" name="rutimapro" placeholder="buscar imagen">
+					<input type="submit" name="Insertar">
+				</form>
+			</div>
 			
 			<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	
