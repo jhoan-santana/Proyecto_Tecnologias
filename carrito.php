@@ -55,23 +55,10 @@
 
 	<div class="main-content">
 		<div class="content-page">
-			<h3>Mi carrito</h3>
+			<div class="titulo">Mi configuración</div>
 			<div class="body-pedidos" id="space-list">
 			</div>
-			<input class="ipt-procom" type="text" id="dirusu" placeholder="Dirección">
-			<br>
-			<input class="ipt-procom" type="text" id="telusu" placeholder="Celular">
-			<br>
-			<h4>Tipos de pago</h4>
-			<div class="metodo-pago">
-				<input type="radio" name="tipopago" value="1" id="tipo1">
-				<label for="tipo1">Pago por transferencia</label>
-			</div>
-			<div class="metodo-pago">
-				<input type="radio" name="tipopago" value="2" id="tipo2">
-				<label for="tipo2">Pago con tarjeta de crédito/débito</label>
-			</div>
-			<button onclick="procesar_compra()" style="margin-top: 5px;">Procesar compra</button>
+			<button onclick="procesar_compra()" style="margin-top: 5px;">Guardar configuración</button>
 		</div>
 	</div>
 	<script type="text/javascript">
