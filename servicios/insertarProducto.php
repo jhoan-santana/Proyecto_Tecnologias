@@ -1,3 +1,4 @@
+
 <?php
 include('ConnectionDB.php');
 
@@ -17,7 +18,12 @@ if(isset($_POST['Insertar'])){
     }else{
       echo "no inserto";
     }
-  }
+  } 
+
+  
+  
+  
 }
+
 ?>
 
