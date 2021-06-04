@@ -46,6 +46,7 @@
 				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 				
 			</div>
+			
 			<a class = "logout" href="logout.php">Cierra Sesión </a>
 		</div>
 		
