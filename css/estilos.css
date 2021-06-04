@@ -515,9 +515,6 @@ button{
     .product-box {
         width: calc(100%/2 - 20px);
     }
-    .item-pedido{
-        display: flex;
-    }
 
   }
   
