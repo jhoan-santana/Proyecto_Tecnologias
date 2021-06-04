@@ -24,7 +24,7 @@
     rel="stylesheet"/>
 	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="/js/rating.js"></script>
+<script type="text/javascript" src="js/rating.js"></script>
 </head>
 <body>
 	<header>
@@ -63,7 +63,7 @@
 			        starLength: '5',
 			        initialValue: '',
 			        callbackFunctionName: 'processRating',
-			        imageDirectory: 'images/',
+			        imageDirectory: 'assets/',
 			        inputAttr: 'postID'
 						    });
 						});
