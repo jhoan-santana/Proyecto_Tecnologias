@@ -8,7 +8,7 @@ include('ConnectionDB.php');
     $con = $_POST['Eliminar']; 
     $result = mysqli_query($con,$sql);
     if ($result) {
-      header('Location: ../inicio admin');
+      header('Location: ../Registro/inicio admin');
       echo "Elimino";
     }else{
       

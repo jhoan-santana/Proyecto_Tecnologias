@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if (!isset($_SESSION['codusu'])) {
-		header('location: index.php');
+		header('location: ../index.php');
 	}
 ?>
 <!DOCTYPE html>
@@ -15,8 +15,8 @@
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/estilos.css" />
-  <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="shortcut icon" href="../assets/logo2.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     rel="stylesheet"
@@ -42,11 +42,11 @@
 			<?php
 			}
 			?>
-			<div class="logo-place"><a href="inicio.php"><img src="assets/logo.png"></a></div>
+			<div class="logo-place"><a href="../componentes/inicio.php"><img src="../assets/logo.png"></a></div>
 			<div class="item-option" title="Mi PC">
 				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 			</div>
-			<a class = "logout" href="logout.php">Cierra Sesión </a>
+			<a class = "logout" href="../servicios/logout.php">Cierra Sesión </a>
 		</div>
 		
 		<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
@@ -78,7 +78,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/pedido/get_porprocesar.php',
+				url:'../servicios/pedido/get_porprocesar.php',
 				type:'POST',
 				data:{},
 				success:function(data){
@@ -89,7 +89,7 @@
 						html+=
 						'<div class="item-pedido">'+
 							'<div class="pedido-img">'+
-								'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+								'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 							'</div>'+
 							'<div class="pedido-detalle">'+
 								'<h3>'+data.datos[i].nompro+'</h3>'+

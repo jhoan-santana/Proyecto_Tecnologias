@@ -13,7 +13,7 @@ if(isset($_POST['Insertar'])){
     $sql = "INSERT INTO PRODUCTO (nompro,despro,prepro,estado,rutimapro) VALUES ('$nompro','$despro','$prepro','$estado','$rutimapro')";
     $result = mysqli_query($con,$sql);
     if ($result) {
-      header('Location: ../dashboard_admi.html');
+      header('Location: ../Mipc/dashboard_admi.html');
       echo "inserto";
     }else{
       echo "no inserto";

@@ -9,16 +9,16 @@ if ($result) {
     if ($count!=0) {
         $contrasenaAdmin=$_POST['contrasenaAdmin'];
         if ($row['contrasenaAdmin']!=$contrasenaAdmin) {
-            header('Location: ../login.php?e=3');
+            header('Location: ../Registro/login.php?e=3');
         }else{
             session_start();
             $_SESSION['codeAdmin']=$row['codeAdmin'];
             $_SESSION['emailAdmin']=$row['emailAdmin'];
-            header('Location: ../dashboard_admi.html');
+            header('Location: ../Mipc/dashboard_admi.html');
         }
     }else{
-        header('Location: ../login.php?e=2');
+        header('Location: ../Registro/login.php?e=2');
     }
 }else{
-    header('Location: ../login.php?e=1');
+    header('Location: ../Registro/login.php?e=1');
 }

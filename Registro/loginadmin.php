@@ -16,13 +16,13 @@
 <body>
   <header>
     <nav>                
-      <img src="assets/logo.png" alt="" class= "formulario-logo">
+      <img src="../assets/logo.png" alt="" class= "formulario-logo">
     </nav>  
 
     <div class="form-group"> 
     <h1></h1>
     <h1>Hola admin</h1>
-      <form class= "form" action="servicios/loginadmin.php" method="POST">
+      <form class= "form" action="../servicios/loginadmin.php" method="POST">
 
         <input type="text" name="emailAdmin" placeholder="Correo electronico">
         <input type="password" name="contrasenaAdmin" placeholder="Contraseña">
@@ -47,7 +47,7 @@
         <h1></h1>
         <a class = "botonregistro" href="login.php">Inicia sesion como usuario</a>
         <h1></h1>
-        <a class = "botonregistro" href="index.html">Salir</a>
+        <a class = "botonregistro" href="../index.html">Salir</a>
       </form>
     </div>
     <div class= "wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"></path></svg></div>

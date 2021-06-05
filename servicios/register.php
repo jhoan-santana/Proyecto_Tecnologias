@@ -10,7 +10,7 @@ if(isset($_POST['Registrar'])){
     $sql = "INSERT INTO USUARIO (nomusu,apeusu,emausu,pasusu) VALUES ('$nomusu','$apeusu','$emausu','$pasusu')";
     $result = mysqli_query($con,$sql);
     if ($result) {
-      header('Location: ../login.php');
+      header('Location: ../Registro/login.php');
    
     }
     }

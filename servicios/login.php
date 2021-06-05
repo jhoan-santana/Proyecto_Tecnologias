@@ -12,17 +12,17 @@ if ($result) {
 	if ($count!=0) {
 		$pasusu=$_POST['pasusu'];
 		if ($row['pasusu']!=$pasusu) {
-			header('Location: ../login.php?e=3');
+			header('Location: ../Registro/login.php?e=3');
 		}else{
 			session_start();
 			$_SESSION['codusu']=$row['codusu'];
 			$_SESSION['emausu']=$row['emausu'];
 			$_SESSION['nomusu']=$row['nomusu'];
-			header('Location: ../inicio.php');
+			header('Location: ../componentes/inicio.php');
 		}
 	}else{
-		header('Location: ../login.php?e=2');
+		header('Location: ../Registro/login.php?e=2');
 	}
 }else{
-	header('Location: ../login.php?e=1');
+	header('Location: ../Registro/login.php?e=1');
 }
