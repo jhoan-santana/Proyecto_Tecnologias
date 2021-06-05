@@ -54,22 +54,24 @@
 	</header>
 	
 	<div class="contenedor grafica">
-		<h1 class = "titulo">Memoria RAM</h1>
+		<h1 class = "titulo">CPU (central process unit)</h1>
 		<div class= contenedor-grafica>
 			<div class= "contenido-textos">
-				<h3><span>2</span>¿Qué son las memorias RAM?</h3>
-				<p>La memoria RAM es la memoria principal de un dispositivo,
-					 esa donde se almacenan de forma temporal los datos de los programas
-					  que estás utilizando en este momento. Sus siglas significan Random Access Memory </p>
+				<h3><span>4</span>¿Qué es el procesador?</h3>
+				<p>El procesador es el cerebro del sistema,
+					 justamente procesa todo lo que ocurre en la PC y 
+					 ejecuta todas las acciones que existen.
+					  Cuanto más rápido sea el procesador que tiene una computadora,
+					   más rápidamente se ejecutarán las órdenes que se le den a la máquina.</p>
 			</div>
 			</div>
-		<div class="products-list1" id="space-list1">
+		<div class="products-list3" id="space-list3">
 		</div>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/producto/get_all_products1.php',
+				url:'servicios/producto/get_all_products3.php',
 				type:'POST',
 				data:{},
 				success:function(data){
@@ -88,7 +90,7 @@
 							'</a>'+
 						'</div>';
 					}
-					document.getElementById("space-list1").innerHTML=html;
+					document.getElementById("space-list3").innerHTML=html;
 				},
 				error:function(err){
 					console.error(err);
@@ -103,13 +105,10 @@
 		}
 	</script>
 
-<div class=BotonSiguiente><form action="Gabinete.php"></div>
-    <input type="submit" value="Atrás" />
-    </form>
-
-	<div class=Botonaatras><form action="Cpu.php"></div>
-    <input type="submit" value="Siguiente" />
-    </form>
+<div class= "botonesfoot">
+		<a class = "sig-atr" href="Ram.php">Atrás </a>
+		<a class = "sig-atr" href="Gpu.php">Siguiente </a>
+	</div>
 
 	
 

@@ -101,13 +101,10 @@
 		}
 	</script>
 
-<div class=BotonSiguiente><form action="Cpu.php"></div>
-    <input type="submit" value="Atrás" />
-    </form>
-
-	<div class=Botonaatras><form action="Mother.php"></div>
-    <input type="submit" value="Siguiente" />
-    </form>
+<div class= "botonesfoot">
+		<a class = "sig-atr" href="Cpu.php">Atrás </a>
+		<a class = "sig-atr" href="Mother.php">Siguiente </a>
+	</div>
 
 </body>
 </html>

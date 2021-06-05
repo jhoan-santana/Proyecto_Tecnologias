@@ -338,8 +338,8 @@ select {
 	justify-content: center;
 	align-items: center;
 	margin-top: 7px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .logo-place img{
@@ -362,7 +362,7 @@ div.options-place{
     margin-bottom: 10%;
 }
 
-.item-option{
+div.item-option{
     display: flex;
     justify-content:right;
 	padding: 5px 10px;
@@ -374,12 +374,18 @@ div.options-place{
 }
 
 .item-option p{
-	font-size: 15px;
+	font-size: 50%;
 	margin: 0;
 	margin-left: 5px;
 }
 
 .fas.fa-desktop{
+    font-size: 70%;
+    color:#fff;
+}
+
+.far.fa-user{
+    font-size: 70%;
     color:#fff;
 }
 
@@ -453,12 +459,13 @@ button{
 }
 
 .logout{
+    line-height : 0.02%;
     margin-left: 5%;
     display: flex;
     justify-content:right;
 	padding: 5px 10px;
 	line-height: 30px;
-	font-size: 15px;
+	font-size: 80%;
 	cursor: pointer;
 	color:#fff;
 	font-family: 'Sen', sans-serif;
@@ -519,17 +526,24 @@ button{
         flex-direction: column;
         justify-content: center;
     }
+    .sig-atr{
+        width: calc(25% - 1px);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
   }
 
 
   /*botones*/
 
   a.Botoninicio{
+    text-align:center;
     border-style: none;
 	border-radius: 5px;
 	padding-top: 1%;
     padding-bottom: 1%;
-    width: calc(20% - 1px);
+    width: calc(30% - 1px);
 	color: #fff;
 	background: blueviolet;
 	cursor: pointer;
@@ -538,6 +552,15 @@ button{
     margin-right: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
+  }
+
+
+
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .botonsiguiente{
@@ -564,7 +587,24 @@ button{
   }
 
 
-  .container{
-    align-items: center;
-    flex-wrap: wrap;
+  .botonesfoot{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sig-atr{
+    text-align:center;
+    border-style: none;
+	border-radius: 5px;
+	padding-top: 1%;
+    padding-bottom: 1%;
+    width: calc(20% - 1px);
+	color: #fff;
+	background: blueviolet;
+	cursor: pointer;
+	font-size: 80%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }

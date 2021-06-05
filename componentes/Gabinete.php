@@ -54,24 +54,24 @@
 	</header>
 	
 	<div class="contenedor grafica">
-		<h1 class = "titulo">CPU (central process unit)</h1>
+		<h1 class = "titulo">Gabinete</h1>
 		<div class= contenedor-grafica>
 			<div class= "contenido-textos">
-				<h3><span>4</span>¿Qué es el procesador?</h3>
-				<p>El procesador es el cerebro del sistema,
-					 justamente procesa todo lo que ocurre en la PC y 
-					 ejecuta todas las acciones que existen.
-					  Cuanto más rápido sea el procesador que tiene una computadora,
-					   más rápidamente se ejecutarán las órdenes que se le den a la máquina.</p>
+				<h3><span>1</span>¿Qué es el gabinete?</h3>
+				<p>Las carcasas, torres, gabinetes, cajas o chasis de computadora u ordenador,
+					 son el armazón del equipo que contiene los componentes del computador,
+					  normalmente construidos de acero, plástico o aluminio. 
+					  También podemos encontrarlas de otros materiales como madera o polimetilmetacrilato
+					   para cajas de diseño. A menudo de metal electrogalvanizado.
+					    Su función es la de proteger los componentes del computador. </p>
 			</div>
-			</div>
-		<div class="products-list3" id="space-list3">
 		</div>
 	</div>
+	<div class="products-list" id="space-list"></div>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/producto/get_all_products3.php',
+				url:'servicios/producto/get_all_products.php',
 				type:'POST',
 				data:{},
 				success:function(data){
@@ -90,7 +90,7 @@
 							'</a>'+
 						'</div>';
 					}
-					document.getElementById("space-list3").innerHTML=html;
+					document.getElementById("space-list").innerHTML=html;
 				},
 				error:function(err){
 					console.error(err);
@@ -104,17 +104,10 @@
 			return "$ "+array[0];
 		}
 	</script>
-
-<div class=BotonSiguiente><form action="Ram.php"></div>
-    <input type="submit" value="Atrás" />
-    </form>
-
-	<div class=Botonaatras><form action="Gpu.php"></div>
-    <input type="submit" value="Siguiente" />
-    </form>
-
-
-	
+	<div class= "botonesfoot">
+	<a class = "sig-atr" href="inicio.php">Atrás </a>
+	<a class = "sig-atr" href="Almacenamiento.php">Siguiente </a>
+	</div>
 
 </body>
 </html>

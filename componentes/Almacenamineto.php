@@ -54,29 +54,24 @@
 	</header>
 	
 	<div class="contenedor grafica">
-		<h1 class = "titulo">Refrigeración</h1>
+		<h1 class = "titulo">Almacenamineto</h1>
 		<div class= contenedor-grafica>
 			<div class= "contenido-textos">
-				<h3><span>8</span>¿Qué es la refrigeración?</h3>
-				<p>
-				El calor es el enemigo a batir. El «coco» de los circuitos integrados en general.
-				 Y de los microprocesadores en particular. Si se incrementa en exceso puede provocar 
-				 que la estabilidad y el rendimiento de un ordenador caigan en picado, pero lo peor no es esto.
-				  Lo más grave es que una temperatura excesiva puede desencadenar procesos fisicoquímicos capaces
-				   de dañar permanentemente un microprocesador. 
-				   Afortunadamente, tenemos herramientas diseñadas para impedir que
-				   ocurran estos efectos no deseados. La refrigeración mediante ventiladores
-				    es la más utilizada y suele dar muy buenos resultados, y tambien existe la refiregación liquida.
-				</p>
+				<h3><span>3</span>¿Qué es un hdd y ssd?</h3>
+				<p>Las unidades de estado sólido o SSD (Solid State Drive) son una alternativa 
+					a los discos duros. La gran diferencia es que mientras los discos duros utilizan
+					 componentes mecánicos que se mueven, las SSD almacenan los archivos en microchips
+					  con memorias flash interconectadas entre sí. Por lo tanto, casi podríamos considerarlos
+					   como una evolución de las memorias USB. </p>
+					   </div>
 			</div>
-			</div>
-		<div class="products-list7" id="space-list7">
+		<div class="products-list2" id="space-list2">
 		</div>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/producto/get_all_products7.php',
+				url:'servicios/producto/get_all_products2.php',
 				type:'POST',
 				data:{},
 				success:function(data){
@@ -95,7 +90,7 @@
 							'</a>'+
 						'</div>';
 					}
-					document.getElementById("space-list7").innerHTML=html;
+					document.getElementById("space-list2").innerHTML=html;
 				},
 				error:function(err){
 					console.error(err);
@@ -111,15 +106,10 @@
 	</script>
 
 
-<div class=BotonSiguiente><form action="Psu.php"></div>
-    <input type="submit" value="Atrás" />
-    </form>
-
-	<div class=Botonaatras><form action="inicio.php"></div>
-    <input type="submit" value="Siguiente" />
-    </form>
-
-	
+	<div class= "botonesfoot">
+		<a class = "sig-atr" href="Gabinete.php">Atrás </a>
+		<a class = "sig-atr" href="Ram.php">Siguiente </a>
+	</div>
 
 </body>
 </html>

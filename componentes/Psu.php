@@ -108,13 +108,10 @@
 
 
 
-<div class=BotonSiguiente><form action="Mother.php"></div>
-    <input type="submit" value="Atrás" />
-    </form>
-
-	<div class=Botonaatras><form action="Cooling.php"></div>
-    <input type="submit" value="Siguiente" />
-    </form>
+	<div class= "botonesfoot">
+		<a class = "sig-atr" href="Mother.php">Atrás </a>
+		<a class = "sig-atr" href="Cooling.php">Siguiente </a>
+	</div>
 	
 
 </body>

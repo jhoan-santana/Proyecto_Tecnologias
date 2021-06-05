@@ -53,25 +53,26 @@
 		<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	</header>
 	
-	<div class="contenedor grafica">
-		<h1 class = "titulo">Gabinete</h1>
+	
+<div class="contenedor grafica">
+		<h1 class = "titulo">Tarjeta madre</h1>
 		<div class= contenedor-grafica>
 			<div class= "contenido-textos">
-				<h3><span>1</span>¿Qué es el gabinete?</h3>
-				<p>Las carcasas, torres, gabinetes, cajas o chasis de computadora u ordenador,
-					 son el armazón del equipo que contiene los componentes del computador,
-					  normalmente construidos de acero, plástico o aluminio. 
-					  También podemos encontrarlas de otros materiales como madera o polimetilmetacrilato
-					   para cajas de diseño. A menudo de metal electrogalvanizado.
-					    Su función es la de proteger los componentes del computador. </p>
+				<h3><span>6</span>¿Qué es la tarjeta madre?</h3>
+				<p> La tarjeta madre también conocida como placa madre,
+					 placa base o motherboard (en inglés), 
+					 es la tarjeta principal en la estructura interna del computador donde 
+					 se encuentran los circuitos electrónicos, el procesador, las memorias,
+					 y las conexiones principales, en ella se conectan todos los componentes del computador. </p>
 			</div>
+			</div>
+		<div class="products-list5" id="space-list5">
 		</div>
 	</div>
-	<div class="products-list" id="space-list"></div>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/producto/get_all_products.php',
+				url:'servicios/producto/get_all_products5.php',
 				type:'POST',
 				data:{},
 				success:function(data){
@@ -90,7 +91,7 @@
 							'</a>'+
 						'</div>';
 					}
-					document.getElementById("space-list").innerHTML=html;
+					document.getElementById("space-list5").innerHTML=html;
 				},
 				error:function(err){
 					console.error(err);
@@ -106,14 +107,11 @@
 	</script>
 
 
+<div class= "botonesfoot">
+		<a class = "sig-atr" href="Gpu.php">Atrás </a>
+		<a class = "sig-atr" href="Psu.php">Siguiente </a>
+	</div>
 
-	<div class=BotonSiguiente><form action="inicio.php"></div>
-    <input type="submit" value="Atrás" />
-    </form>
-
-	<div class=Botonaatras><form action="Ram.php"></div>
-    <input type="submit" value="Siguiente" />
-    </form>
 	
 
 </body>
