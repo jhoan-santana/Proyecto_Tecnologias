@@ -60,23 +60,23 @@
             <div class="carousellista">
                 <div class = "carouselelemento">
                 <img src="../assets/juegos1.jpg" alt="Juega sin limites con el poder de las nuevas tarjetas gráficas "  > 
-                <p>Juega sin limites con el poder de las nuevas tarjetas gráficas</p>
+                <p class= "letra" >Juega sin limites con el poder de las nuevas tarjetas gráficas</p>
                 </div>
                  <div class = "carouselelemento">
                 <img src="../assets/noticia.jpg" alt="Nvidia presenta sus nuevas tarjetas gráficas con arquetiectura ampere y nuevos nucleos RTX. ">
-                <p>Nvidia presenta sus nuevas tarjetas gráficas con arquetiectura ampere y nuevos nucleos RTX.</p>
+                <p class= "letra">Nvidia presenta sus nuevas tarjetas gráficas con arquetiectura ampere y nuevos nucleos RTX.</p>
                 </div>
                 <div class = "carouselelemento">
                 <img src="../assets/hardware.jpg" alt="Se rumorea que los nuevos procesadores de intel alfin pasaran a ser de 7nm.">
-                <p>Se rumorea que los nuevos procesadores de intel alfin pasaran a ser de 7nm.</p>
+                <p class= "letra">Se rumorea que los nuevos procesadores de intel alfin pasaran a ser de 7nm.</p>
                 </div>
                 <div class = "carouselelemento">
                 <img src="../assets/nvidia.jpg" alt="Nvidia lidera el mercado con su tecnologia DLSS pero AMD no se quedara átras.">
-                <p>Nvidia lidera el mercado con su tecnologia DLSS pero AMD no se quedara átras.</p>
+                <p class= "letra">Nvidia lidera el mercado con su tecnologia DLSS pero AMD no se quedara átras.</p>
                 </div>
                 <div class = "carouselelemento">
                 <img src="../assets/diseño.jpg" alt="Crea más allá de tus limites con una computadora enfocada en diseño. ">
-                <p>Crea más allá de tus limites con una computadora enfocada en diseño.</p>
+                <p class= "letra">Crea más allá de tus limites con una computadora enfocada en diseño.</p>
                 </div>
             </div>
 
