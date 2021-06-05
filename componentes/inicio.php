@@ -50,6 +50,51 @@
 			<a class = "logout" href="../servicios/logout.php">Cierra Sesión </a>
 		</div>
 
+
+		<div class ="carousel">
+        <div class ="carouselcontenedor">
+            <button aria-label="Anterior" class ="carouselanterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="carousellista">
+                <div class = "carouselelemento">
+                <img src="../assets/juegos1.jpg" alt="Juega sin limites con el poder de las nuevas tarjetas gráficas "  > 
+                <p>Juega sin limites con el poder de las nuevas tarjetas gráficas</p>
+                </div>
+                 <div class = "carouselelemento">
+                <img src="../assets/noticia.jpg" alt="Nvidia presenta sus nuevas tarjetas gráficas con arquetiectura ampere y nuevos nucleos RTX. ">
+                <p>Nvidia presenta sus nuevas tarjetas gráficas con arquetiectura ampere y nuevos nucleos RTX.</p>
+                </div>
+                <div class = "carouselelemento">
+                <img src="../assets/hardware.jpg" alt="Se rumorea que los nuevos procesadores de intel alfin pasaran a ser de 7nm.">
+                <p>Se rumorea que los nuevos procesadores de intel alfin pasaran a ser de 7nm.</p>
+                </div>
+                <div class = "carouselelemento">
+                <img src="../assets/nvidia.jpg" alt="Nvidia lidera el mercado con su tecnologia DLSS pero AMD no se quedara átras.">
+                <p>Nvidia lidera el mercado con su tecnologia DLSS pero AMD no se quedara átras.</p>
+                </div>
+                <div class = "carouselelemento">
+                <img src="../assets/diseño.jpg" alt="Crea más allá de tus limites con una computadora enfocada en diseño. ">
+                <p>Crea más allá de tus limites con una computadora enfocada en diseño.</p>
+                </div>
+            </div>
+
+            <button aria-label="Siguiente" class ="carouselsiguiente">
+            <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div role="tablist" class="carouselindicadores"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
 		<div class="container">
 			<a href="Gabinete.php" class="Botoninicio">Gabinete</a>
 			<a href="Almacenamiento.php" class="Botoninicio">Almacenamiento</a>
@@ -64,7 +109,7 @@
 			<a href="Psu.php" class="Botoninicio">PSU</a>
 			<a href="Cooling.php" class="Botoninicio">Refrigeración</a>
 		</div>
-
+<script>src ="../js/carrusel.js"</script>
 		<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	</header>
 	</body>
