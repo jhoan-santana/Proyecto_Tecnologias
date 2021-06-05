@@ -75,7 +75,7 @@
 					let html='';
 					for (var i = 0; i < data.datos.length; i++) {
 						if (data.datos[i].codpro==p) {
-							document.getElementById("idimg").src="assets/products/"+data.datos[i].rutimapro;
+							document.getElementById("idimg").src="../assets/products/"+data.datos[i].rutimapro;
 							document.getElementById("idtitle").innerHTML=data.datos[i].nompro;
 							document.getElementById("idprice").innerHTML=formato_precio(data.datos[i].prepro);
 							document.getElementById("iddescription").innerHTML=data.datos[i].despro;
