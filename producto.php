@@ -55,45 +55,10 @@
 					<h3 id="iddescription">Descripcion del producto</h3>
 					<button onclick="iniciar_compra()">Agregar a mi configuracion</button>
 					<button onclick="iniciar_compra()">ir a sitio web</button>
-
-					<h1></h1>
-
-
-					<input name="rating" value="0" id="rating_star" type="hidden" postID="1" />
-
-					<script type="text/javascript">
-						$(function() {
-    					$("#rating_star").codexworld_rating_widget({
-			        starLength: '5',
-			        initialValue: '',
-			        callbackFunctionName: 'processRating',
-			        imageDirectory: 'assets/',
-			        inputAttr: 'postID'
-						    });
-						});
-						function processRating(val, attrVal){
-						    $.ajax({
-						        type: 'POST',
-						        url: 'rating.php',
-						        data: 'postID='+attrVal+'&ratingPoints='+val,
-						        dataType: 'json',
-						        success : function(data) {
-						            if (data.status == 'ok') {
-						                alert('You have rated '+val+' to CodexWorld');
-						                $('#avgrat').text(data.average_rating);
-						                $('#totalrat').text(data.rating_number);
-						            }else{
-						                alert('Some problem occured, please try again.');
-						            }
-						        }
-						    });
-						}
-					</script>
 				</div>
 			</section>
 			<div class="titulo">Productos destacados</div>
-			<div class="products-list" id="space-list">
-			</div>
+			<div class="products-list" id="space-list"></div>
 		</div>
 	</div>
 	<script type="text/javascript">
