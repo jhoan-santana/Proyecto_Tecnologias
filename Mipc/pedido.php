@@ -43,7 +43,7 @@
 			<?php
 			}
 			?>
-			<div class="logo-place"><a href="../componentes/inicio.php"><img src="assets/logo.png"></a></div>
+			<div class="logo-place"><a href="../componentes/inicio.php"><img src="../assets/logo.png"></a></div>
 			<div class="item-option" title="Mi PC">
 				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 			</div>
@@ -78,7 +78,7 @@
 						html+=
 						'<div class="item-pedido">'+
 							'<div class="pedido-img">'+
-								'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+								'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 							'</div>'+
 							'<div class="pedido-detalle">'+
 								'<h3>'+data.datos[i].nompro+'</h3>'+

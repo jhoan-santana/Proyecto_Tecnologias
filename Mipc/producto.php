@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="../css/estilos.css" />
-  <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/logo2.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     rel="stylesheet"
@@ -34,7 +34,7 @@
 				echo
 				'<div class="item-option"><i class="far fa-user" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
 			}?>
-			<div class="logo-place"><a href="../inicio.php"><img src="assets/logo.png"></a></div>
+			<div class="logo-place"><a href="../inicio.php"><img src="../assets/logo.png"></a></div>
 			<div class="item-option" title="Mi PC">
 				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 			</div>
@@ -47,7 +47,7 @@
 		<div class="content-page">
 			<section>
 				<div class="part1">
-					<img id="idimg" src="assets/logo.png">
+					<img id="idimg" src="../assets/logo.png">
 				</div>
 				<div class="part2">
 					<h2 id="idtitle">NOMBRE PRINCIPAL</h2>
@@ -85,7 +85,7 @@
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+

@@ -41,7 +41,7 @@
 			<?php
 			}
 			?>
-			<div class="logo-place"><a href="../componentes/inicio.php"><img src="assets/logo.png"></a></div>
+			<div class="logo-place"><a href="../componentes/inicio.php"><img src="../assets/logo.png"></a></div>
 			<div class="item-option" title="Mi PC">
 				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 				
@@ -79,7 +79,7 @@
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
@@ -130,7 +130,7 @@
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
@@ -181,7 +181,7 @@
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
@@ -230,7 +230,7 @@
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
@@ -280,7 +280,7 @@
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
@@ -334,7 +334,7 @@
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
@@ -387,7 +387,7 @@
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
@@ -440,7 +440,7 @@
 						'<div class="product-box">'+
 							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
-									'<img src="assets/products/'+data.datos[i].rutimapro+'">'+
+									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
 									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
 									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
