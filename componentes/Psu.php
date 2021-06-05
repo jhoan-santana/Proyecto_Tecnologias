@@ -80,7 +80,7 @@
 					for (var i = 0; i < data.datos.length; i++) {
 						html+=
 						'<div class="product-box">'+
-							'<a href="../Mipc/producto.php?p='+data.datos[i].codpro+'">'+
+							'<a href="../Mipc/producto6.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
 									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
