@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="../css/estilos.css">
   <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
