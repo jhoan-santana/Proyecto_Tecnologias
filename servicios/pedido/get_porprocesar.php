@@ -5,10 +5,10 @@ $response=new stdClass();
 function estado2texto($id){
 	switch ($id) {
 		case '1':
-			return 'Por procesar';
+			return 'guardado en mi pc';
 			break;
 		case '2':
-			return 'Por pagar';
+			return 'guardado en mi pc';
 			break;
 		default:
 			break;
