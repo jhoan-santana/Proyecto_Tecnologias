@@ -22,7 +22,7 @@
     crossorigin="anonymous"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" 
     rel="stylesheet"/>
-
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 	<link rel="stylesheet" href="../librerias/fontawesome/css/all.css">
 	
 </head>
@@ -109,8 +109,10 @@
 			<a href="Psu.php" class="Botoninicio">PSU</a>
 			<a href="Cooling.php" class="Botoninicio">Refrigeración</a>
 		</div>
-<script>src ="../js/carrusel.js"</script>
+		
 		<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
+		<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+		<script src ="../js/carrusel.js"></script>
 	</header>
 	</body>
 </html>
