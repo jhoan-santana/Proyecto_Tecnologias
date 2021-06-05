@@ -100,41 +100,7 @@
 				}
 			});
 		});
-		$(document).ready(function(){
-			$.ajax({
-				url:'../servicios/producto/get_all_products.php',
-				type:'POST',
-				data:{},
-				success:function(data){
-					console.log(data);
-					let html='';
-					for (var i = 0; i < data.datos.length; i++) {
-						if (data.datos[i].codpro==p) {
-							document.getElementById("idimg").src="../assets/products/"+data.datos[i].rutimapro;
-							document.getElementById("idtitle").innerHTML=data.datos[i].nompro;
-							document.getElementById("idprice").innerHTML=formato_precio(data.datos[i].prepro);
-							document.getElementById("iddescription").innerHTML=data.datos[i].despro;
-							
-						}
-						html+=
-						'<div class="product-box">'+
-							'<a href="producto.php?p='+data.datos[i].codpro+'">'+
-								'<div class="product">'+
-									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
-									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
-									'<div class="detail-description">'+data.datos[i].despro+'</div>'+
-									'<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
-								'</div>'+
-							'</a>'+
-						'</div>';
-					}
-					document.getElementById("space-list").innerHTML=html;
-				},
-				error:function(err){
-					console.error(err);
-				}
-			});
-		});
+		
 		function formato_precio(valor){
 			//10.99
 			let svalor=valor.toString();
