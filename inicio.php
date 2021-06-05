@@ -50,42 +50,18 @@
 			<a class = "logout" href="logout.php">Cierra Sesión </a>
 		</div>
 
-
-	<div class=Botoninicio><form action="Gabinete.php"></div>
-    <input type="submit" value="Gabinete" />
-    </form>
-
-	<div class=Botoninicio><form action="Ram.php"></div>
-    <input type="submit" value="Memoria Ram" />
-    </form>
+		<div class="container">
+			<a href="Gabinete.php" class="Botoninicio">Gabinete</a>
+			<a href="Almacenamiento.php" class="Botoninicio">Almacenamiento</a>
+			<a href="Ram.php" class="Botoninicio">RAM</a>
+			<a href="Cpu.php" class="Botoninicio">CPU</a>
+			<a href="Gpu.php" class="Botoninicio">GPU</a>
+			<a href="Mother.php" class="Botoninicio">Motherboard</a>
+			<a href="Psu.php" class="Botoninicio">PSU</a>
+			<a href="Cooling" class="Botoninicio">Refrigeración</a>
+		</div>
 		
-	<div class=Botoninicio><form action="Cpu.php"></div>
-    <input type="submit" value="Cpu" />
-    </form>
-
-	<div class=Botoninicio><form action="Gpu.php"></div>
-    <input type="submit" value="Gpu" />
-    </form>
-		
-	<div class=Botoninicio><form action="Mother.php"></div>
-    <input type="submit" value="Motherboard" />
-    </form>
-
-	<div class=Botoninicio><form action="Psu.php"></div>
-    <input type="submit" value="Psu" />
-    </form>
-
-	<div class=Botoninicio><form action="Cooling.php"></div>
-    <input type="submit" value="Refrigeración" />
-    </form>
-	
-		
-	<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
+		<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	</header>
-	
-	
-	
-
-
-</body>
+	</body>
 </html>

@@ -519,6 +519,7 @@ button{
 @media screen and (max-width: 1100px) {
     .product-box {
         width: calc(100%/2 - 20px);
+
     }
 
   }
@@ -527,21 +528,39 @@ button{
   @media screen and (max-width: 600px) {
     .product-box {
         width: calc(100%/1 - 20px);
+        
+    }
+    .item-pedido{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
   }
 
-  .botoninicio{
-      
-    line-height: 0px;
-    width: 28px;
-    height: 28px;
-    padding: 0px;
-    margin: 0px;
-    margin-left: 2px;
-    list-style: none;
-    float: left;
-    cursor: pointer; 
+
+  /*botones*/
+
+  a.Botoninicio{
+    border-style: none;
+	border-radius: 5px;
+	padding-top: 1%;
+    padding-bottom: 1%;
+    width: calc(20% - 1px);
+	color: #fff;
+	background: blueviolet;
+	cursor: pointer;
+	font-size: 80%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
+
   .botonsiguiente{
     line-height: 0px;
     width: 28px;
@@ -563,15 +582,10 @@ button{
     list-style: none;
     float: left;
     cursor: pointer; 
-    .item-pedido{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  }
 
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+
+  .container{
+    align-items: center;
+    flex-wrap: wrap;
   }
