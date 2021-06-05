@@ -100,6 +100,7 @@
 				}
 			});
 		});
+		
 		function formato_precio(valor){
 			//10.99
 			let svalor=valor.toString();

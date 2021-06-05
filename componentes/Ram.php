@@ -63,13 +63,13 @@
 					  que estás utilizando en este momento. Sus siglas significan Random Access Memory </p>
 			</div>
 			</div>
-		<div class="products-list1" id="space-list1">
+		<div class="products-list1" id="space-list2">
 		</div>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'../servicios/producto/get_all_products1.php',
+				url:'../servicios/producto/get_all_products2.php',
 				type:'POST',
 				data:{},
 				success:function(data){
@@ -78,7 +78,7 @@
 					for (var i = 0; i < data.datos.length; i++) {
 						html+=
 						'<div class="product-box">'+
-							'<a href="../Mipc/producto.php?p='+data.datos[i].codpro+'">'+
+							'<a href="../Mipc/producto2.php?p='+data.datos[i].codpro+'">'+
 								'<div class="product">'+
 									'<img src="../assets/products/'+data.datos[i].rutimapro+'">'+
 									'<div class="detail-title">'+data.datos[i].nompro+'</div>'+
@@ -88,7 +88,7 @@
 							'</a>'+
 						'</div>';
 					}
-					document.getElementById("space-list1").innerHTML=html;
+					document.getElementById("space-list2").innerHTML=html;
 				},
 				error:function(err){
 					console.error(err);
