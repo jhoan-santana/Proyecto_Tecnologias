@@ -618,33 +618,24 @@ button{
 
 
 
-.carouselanterior {
-    left: 5%;
-}
-
-.carouselsiguiente {
-    right: 5%;
-}
 
 
-.carouselcontenedor {
-	position: relative;
-}
+
 
 .carouselsiguiente,
 .carouselanterior{
-position:absolute;
-display:block;
-width:30px;
-height: 30px;
-border:none;
-top:calc(50% - 35px);
-cursor: pointer;
-line-height:30px;
-text-align:center;
-background: none;
-color: white;
-opacity: 20%;
+    position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
 }
 
 .carouselanterior:hover,
@@ -652,6 +643,18 @@ opacity: 20%;
 	opacity: 100%;
 }
 
+.carouselsiguiente {
+    right: 5%;
+}
+.carouselanterior {
+    
+    justify-content: left;
+}
+
+
+.carouselcontenedor {
+	position: relative;
+}
 
 
 .carousellista {
@@ -663,12 +666,12 @@ opacity: 20%;
 }
 
 .carouselindicadores .glider-dot{
-display: block;
-width: 30px;
-height: 4px;
-background: white;
-opacity: .2;
-border-radius: 0;
+    display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
 }
 
 .carouselindicadores .glider-dot:hover{
