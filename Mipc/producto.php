@@ -54,7 +54,7 @@
 					<h1 id="idprice">$ 123</h1>
 					<h3 id="iddescription">Descripcion del producto</h3>
 					<button onclick="iniciar_compra()">Agregar a mi configuracion</button>
-					<button onclick="iniciar_compra()">ir a sitio web</button>
+					<button role="link" onclick="window.location='https://univex.umng.edu.co/Kigal/Tap/'">ir a sitio web</button>
 				</div>
 			</section>
 			<div class="titulo">Productos destacados</div>
