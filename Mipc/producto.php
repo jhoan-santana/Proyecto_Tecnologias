@@ -12,7 +12,7 @@
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="../css/estilos.css" />
   <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
@@ -22,7 +22,7 @@
     crossorigin="anonymous"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" 
     rel="stylesheet"/>
-	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
+	<link rel="stylesheet" href="../librerias/fontawesome/css/all.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/rating.js"></script>
 </head>
@@ -34,11 +34,11 @@
 				echo
 				'<div class="item-option"><i class="far fa-user" aria-hidden="true"></i><p>'.$_SESSION['nomusu'].'</p></div>';
 			}?>
-			<div class="logo-place"><a href="inicio.php"><img src="assets/logo.png"></a></div>
+			<div class="logo-place"><a href="../inicio.php"><img src="assets/logo.png"></a></div>
 			<div class="item-option" title="Mi PC">
 				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 			</div>
-			<a class = "logout" href="logout.php">Cierra Sesión </a>
+			<a class = "logout" href="../servicios/logout.php">Cierra Sesión </a>
 		</div>
 		<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffff;"> </path> </svg></div>
 	</header>
@@ -67,7 +67,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/producto/get_all_products.php',
+				url:'../servicios/producto/get_all_products.php',
 				type:'POST',
 				data:{},
 				success:function(data){
@@ -108,7 +108,7 @@
 		}
 		function iniciar_compra(){
 			$.ajax({
-				url:'servicios/compra/validar_inicio_compra.php',
+				url:'../servicios/compra/validar_inicio_compra.php',
 				type:'POST',
 				data:{
 					codpro:p
@@ -130,7 +130,7 @@
 			});
 		}
 		function open_login(){
-			window.location.href="login.php";
+			window.location.href="../Registro/login.php";
 		}
 	</script>
 </body>

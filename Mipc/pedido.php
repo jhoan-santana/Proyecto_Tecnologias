@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if (!isset($_SESSION['codusu'])) {
-		header('location: index.php');
+		header('location: ../index.php');
 	}
 ?>
 <!DOCTYPE html>
@@ -15,8 +15,8 @@
 	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/estilos.css" />
-  <link rel="shortcut icon" href="assets/logo2.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="shortcut icon" href="../assets/logo2.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     rel="stylesheet"
@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" 
     rel="stylesheet"/>
 
-	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
+	<link rel="stylesheet" href="../librerias/fontawesome/css/all.css">
 </head>
 <body>
 <header>   
@@ -43,7 +43,7 @@
 			<?php
 			}
 			?>
-			<div class="logo-place"><a href="inicio.php"><img src="assets/logo.png"></a></div>
+			<div class="logo-place"><a href="../componentes/inicio.php"><img src="assets/logo.png"></a></div>
 			<div class="item-option" title="Mi PC">
 				<a href="carrito.php"><i class="fas fa-desktop" aria-hidden="true"></i></a>
 			</div>
@@ -67,7 +67,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.ajax({
-				url:'servicios/pedido/get_procesados.php',
+				url:'../servicios/pedido/get_procesados.php',
 				type:'POST',
 				data:{},
 				success:function(data){

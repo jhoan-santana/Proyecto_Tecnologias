@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" 
     rel="stylesheet"/>
 
-	<link rel="stylesheet" href="librerias/fontawesome/css/all.css">
+	<link rel="stylesheet" href="../librerias/fontawesome/css/all.css">
 </head>
 <body>
 <header>   	
@@ -133,7 +133,7 @@
 						Culqi.open();
 					}else{
 						$.ajax({
-							url:'servicios/pedido/confirm.php',
+							url:'../servicios/pedido/confirm.php',
 							type:'POST',
 							data:{
 								dirusu:dirusu,
@@ -144,7 +144,7 @@
 							success:function(data){
 								console.log(data);
 								if (data.state) {
-									window.location.href="pedido.php";
+									window.location.href="../Mipc/pedido.php";
 								}else{
 									alert(data.detail);
 								}
@@ -161,7 +161,7 @@
 			if (Culqi.token) { 
 		      	var token = Culqi.token.id;
 		      	$.ajax({
-					url:'servicios/pedido/confirm.php',
+					url:'../servicios/pedido/confirm.php',
 					type:'POST',
 					data:{
 						dirusu:document.getElementById("dirusu").value,
@@ -172,7 +172,7 @@
 					success:function(data){
 						console.log(data);
 						if (data.state) {
-							window.location.href="pedido.php";
+							window.location.href="../Mipc/pedido.php";
 						}else{
 							alert(data.detail);
 						}

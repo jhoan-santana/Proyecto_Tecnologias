@@ -25,7 +25,7 @@
 
     <div class="form-group"> 
     <h1>Registrate</h1>
-      <form action="servicios/register.php" method="POST">
+      <form action="../servicios/register.php" method="POST">
 
       <input type="text" name="nomusu" placeholder="Nombre de Usuario">
 
